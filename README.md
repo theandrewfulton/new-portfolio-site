@@ -8,20 +8,6 @@ Temporary deployed site for testing:
 
 Final deployed site: https://theandrewfulton.com/
 
-
-
-Inspiration:
-
-https://www.freecodecamp.org/news/15-web-developer-portfolios-to-inspire-you-137fb1743cae/
-
-https://www.mockplus.com/blog/post/web-developer-portfolio
-
-https://www.noupe.com/design/web-developer-portfolio-examples.html
-
-https://www.codementor.io/learn-programming/12-important-things-to-include-in-web-dev-portfolios
-
-
-
 # Portfolio Site
 
 Git Repository for my updated portfolio website.
