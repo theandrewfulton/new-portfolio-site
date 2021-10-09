@@ -44,6 +44,8 @@ One page or multiple page design?
 
 grid or carousel for projects? - maybe grid for multi-page, carousel for one-page
 
+I like the columns I have now but grid with extra information on hover might be the way to go.
+
 Potential one-page:
 
 - hero/basic introduction
