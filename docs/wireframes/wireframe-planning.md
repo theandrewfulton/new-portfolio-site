@@ -1,0 +1,84 @@
+# Wireframe/mockup Planning
+
+## Inspiration
+
+
+
+### What I like so far:
+
+https://mattfarley.ca/ - Wireframe graphics as a hero image, purple accent to break up page sections
+
+https://caferati.me/ - materialising letter effect in the hero section. Really like the transition animation between pages but not sure how to go about doing this
+
+http://www.emilyridge.ie/ - hover over projects is good but in this case very hard to read. I really like the navbar
+
+https://pierre.io/ - footer with socials, cursor is cool but a bit distracting, I like the simple grey on black
+
+https://denisechandler.com/ images rotate slightly when hovered over
+
+https://benadam.me/ - so simple, so clean
+
+https://jonny.me/ - hero becomes header
+
+https://jacekjeznach.com/ - "lazy load" content, text animation. Skills word cloud!
+
+### More inspiration if needed:
+
+https://www.mockplus.com/blog/post/web-developer-portfolio
+
+https://www.noupe.com/design/web-developer-portfolio-examples.html
+
+https://www.codementor.io/learn-programming/12-important-things-to-include-in-web-dev-portfolios
+
+
+
+## Features
+
+frosted glass effect
+
+gradient background??? - bit stuck on the background but would like blues and purples
+
+would love to try and make Hero background colour become the header colour.
+
+hamburger menu for mobile and horizontal navbar for tablet and desktop
+
+One page or multiple page design?
+
+grid or carousel for projects? - maybe grid for multi-page, carousel for one-page
+
+Potential one-page:
+
+- hero/basic introduction
+- About/skills/resume
+- projects
+- blog
+- contact
+
+Home and About as one page?
+
+Contact page with form - set up email address
+
+Hover over image for Project information?
+
+Split skills into 3 columns like Matt Farley for design, front-end and mentoring. Something like platforms, technologies/languages and work areas (pi, drones, photogrammetry etc.?)
+
+Featured work on the homepage?
+
+Footer with socials?
+
+### Libraries
+
+[react-scroll](https://www.npmjs.com/package/react-scroll) if I decide to make it one page
+
+[particles.js](https://vincentgarreau.com/particles.js/) for some more dynamic content...
+
+[React icons](https://react-icons.github.io/react-icons/)
+
+[emailJS](https://www.emailjs.com/)
+
+material ui
+
+Shards React
+
+Starting to point to building more in react	
+
