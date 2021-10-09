@@ -1,16 +1,6 @@
 # README
 
-This is the repository for my new portfolio site
-
-GitHub link: https://github.com/theandrewfulton/new-portfolio-site
-
-Temporary deployed site for testing: 
-
-Final deployed site: https://theandrewfulton.com/
-
-# Portfolio Site
-
-Git Repository for my updated portfolio website.
+This is the Git repository for my new portfolio site.
 
 ## Git Repository
 
