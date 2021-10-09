@@ -2,8 +2,6 @@
 
 ## Inspiration
 
-
-
 ### What I like so far:
 
 https://mattfarley.ca/ - Wireframe graphics as a hero image, purple accent to break up page sections
@@ -66,6 +64,8 @@ Featured work on the homepage?
 
 Footer with socials?
 
+[css frosted glass](https://webdesign.tutsplus.com/tutorials/how-to-create-a-frosted-glass-effect-in-css--cms-32535)
+
 ### Libraries
 
 [react-scroll](https://www.npmjs.com/package/react-scroll) if I decide to make it one page
@@ -80,5 +80,15 @@ material ui
 
 Shards React
 
-Starting to point to building more in react	
+[Starting point to building more in react](https://kinsta.com/blog/javascript-libraries/)
+
+styled-components
+
+tailwindcss
+
+https://ui.glass/generator/
+
+[react-acrylic](https://github.com/damaera/react-acrylic)
+
+[frosted-glass](https://www.npmjs.com/package/frosted-glass)
 
