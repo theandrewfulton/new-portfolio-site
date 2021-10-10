@@ -94,3 +94,7 @@ https://ui.glass/generator/
 
 [frosted-glass](https://www.npmjs.com/package/frosted-glass)
 
+### Link to Figma file
+
+https://www.figma.com/file/am1oeEiXQoFJjtFyFQZexB/New-Portfolio-Site?node-id=0%3A1
+
