@@ -72,7 +72,23 @@ Footer with socials?
 
 bump navbar to top with some kind of animation when scrolling down?
 
-Showcase component is most of the viewport height on mobile
+Showcase component is most of the viewport height on mobile (at least for really small screens, then a certain size that accomodates all my content)
+
+Touch targets for hamburger menu may be a little small. Full screen menu instead?
+
+script to update copyright year
+
+react component that takes a param to adjust width and height based on whether it's a project showcase or about section?
+
+Individual Project pages or links to gitHub?
+
+Allow 2 cards in a column on projects page but not on about page?
+
+social media button section on every page
+
+each "layer" above background has same border width in to the previous layer
+
+Some spiel on the Contact page to take up space?
 
 ### Libraries
 
