@@ -68,6 +68,12 @@ Footer with socials?
 
 [css frosted glass](https://webdesign.tutsplus.com/tutorials/how-to-create-a-frosted-glass-effect-in-css--cms-32535)
 
+### Notes now that I'm working on it
+
+bump navbar to top with some kind of animation when scrolling down?
+
+Showcase component is most of the viewport height on mobile
+
 ### Libraries
 
 [react-scroll](https://www.npmjs.com/package/react-scroll) if I decide to make it one page
