@@ -96,6 +96,34 @@ turn navbar from red to default blue/purple on scroll?
 
 Mobile navbar has my name as a wordmark and condenses to AF in the corner on scroll?
 
+do the glassy cards need a gradient through them?
+
+
+
+Draft background #270362
+
+Blue dot #0216C9
+
+
+
+I'd like the background to be a nice purple/blue colour
+
+
+
+h570
+
+
+
+current gradient: 200833 - 110026
+
+
+
+corner radius is now 15
+
+scroll up and border around navbar disappears?
+
+It all looks a bit dead... Maybe experiment with colour?
+
 Fonts:
 
 Should fonts look etched/printed on the glass?
