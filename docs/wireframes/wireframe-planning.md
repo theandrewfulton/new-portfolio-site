@@ -90,6 +90,22 @@ each "layer" above background has same border width in to the previous layer
 
 Some spiel on the Contact page to take up space?
 
+red on top layer frosted glass around desktop navbar?
+
+turn navbar from red to default blue/purple on scroll?
+
+Mobile navbar has my name as a wordmark and condenses to AF in the corner on scroll?
+
+Fonts:
+
+Should fonts look etched/printed on the glass?
+
+Wordmark: Caveat
+
+Headings: Raleway
+
+Body: Raleway or Roboto Slab or Roboto? The full mockup cureently shows Roboto Slab
+
 ### Libraries
 
 [react-scroll](https://www.npmjs.com/package/react-scroll) if I decide to make it one page
