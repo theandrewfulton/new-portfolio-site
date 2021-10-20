@@ -70,61 +70,73 @@ Footer with socials?
 
 ### Notes now that I'm working on it
 
+#### Navbar
+
 bump navbar to top with some kind of animation when scrolling down?
 
-Showcase component is most of the viewport height on mobile (at least for really small screens, then a certain size that accomodates all my content)
+red on top layer frosted glass around desktop navbar?
 
 Touch targets for hamburger menu may be a little small. Full screen menu instead?
-
-script to update copyright year
-
-react component that takes a param to adjust width and height based on whether it's a project showcase or about section?
-
-Individual Project pages or links to gitHub?
-
-Allow 2 cards in a column on projects page but not on about page?
-
-social media button section on every page
-
-each "layer" above background has same border width in to the previous layer
-
-Some spiel on the Contact page to take up space?
-
-red on top layer frosted glass around desktop navbar?
 
 turn navbar from red to default blue/purple on scroll?
 
 Mobile navbar has my name as a wordmark and condenses to AF in the corner on scroll?
 
+scroll up and border around navbar disappears?
+
+
+
+#### About
+
+Show all 3 showcase sections side-by-side or one vertically, never 2.
+
+#### Footer
+
+script to update copyright year
+
+#### Projects
+
+Individual Project pages or links to gitHub?
+
+Allow 2 cards in a column on projects page but not on about page?
+
+#### Social Media
+
+social media button section on every page
+
+
+
+#### Layout/Spacing
+
+each "layer" above background has same border width in to the previous layer
+
+Some spiel on the Contact page to take up space?
+
+#### Showcase Component
+
+h570
+
+react component that takes a param to adjust width and height based on whether it's a project showcase or about section?
+
+Showcase component is most of the viewport height on mobile (at least for really small screens, then a certain size that accomodates all my content)
+
+#### Colours and Gradients
+
+It all looks a bit dead... Maybe experiment with colour?
+
 do the glassy cards need a gradient through them?
-
-
 
 Draft background #270362
 
 Blue dot #0216C9
 
-
-
 I'd like the background to be a nice purple/blue colour
-
-
-
-h570
-
-
 
 current gradient: 200833 - 110026
 
-
-
 corner radius is now 15
 
-scroll up and border around navbar disappears?
-
-It all looks a bit dead... Maybe experiment with colour?
-
-Fonts:
+#### Fonts:
 
 Should fonts look etched/printed on the glass?
 
