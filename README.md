@@ -10,6 +10,10 @@ https://github.com/theandrewfulton/new-portfolio-site
 
 The published portfolio site can be found [here](https://theandrewfulton.com).
 
+While in development, deploys from the staging branch can be found [here](https://staging--tender-saha-025af5.netlify.app/).
+
+While in development, deploys from the main branch can be found [here](https://tender-saha-025af5.netlify.app/).
+
 ## Purpose
 
 The purpose of this portfolio site is to showcase my skills,  projects, work history, and to a certain degree my personality to  potential employers, collaborators and clients. It needs to do this in a functional, well laid out, clear and concise manner.
