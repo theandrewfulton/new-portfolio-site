@@ -36,4 +36,8 @@ Here is a screenshot of this board, taken during this project:![trello-screensho
 
 ## Wireframes
 
+The wireframes for my portfolio site were made in Figma. They can be viewed [here](https://www.figma.com/file/am1oeEiXQoFJjtFyFQZexB/New-Portfolio-Site?node-id=0%3A1).
+
+Colours and fonts were chosen and mocked up using the wireframes for the About page as a starting point.
+
 ### Differences between Wireframes and Screenshots

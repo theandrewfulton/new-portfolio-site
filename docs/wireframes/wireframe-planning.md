@@ -68,6 +68,84 @@ Footer with socials?
 
 [css frosted glass](https://webdesign.tutsplus.com/tutorials/how-to-create-a-frosted-glass-effect-in-css--cms-32535)
 
+### Notes now that I'm working on it
+
+#### Navbar
+
+bump navbar to top with some kind of animation when scrolling down?
+
+red on top layer frosted glass around desktop navbar?
+
+Touch targets for hamburger menu may be a little small. Full screen menu instead?
+
+turn navbar from red to default blue/purple on scroll?
+
+Mobile navbar has my name as a wordmark and condenses to AF in the corner on scroll?
+
+scroll up and border around navbar disappears?
+
+
+
+#### About
+
+Show all 3 showcase sections side-by-side or one vertically, never 2.
+
+#### Footer
+
+script to update copyright year
+
+#### Projects
+
+Individual Project pages or links to gitHub?
+
+Allow 2 cards in a column on projects page but not on about page?
+
+#### Social Media
+
+social media button section on every page
+
+
+
+#### Layout/Spacing
+
+each "layer" above background has same border width in to the previous layer
+
+Some spiel on the Contact page to take up space?
+
+#### Showcase Component
+
+h570
+
+react component that takes a param to adjust width and height based on whether it's a project showcase or about section?
+
+Showcase component is most of the viewport height on mobile (at least for really small screens, then a certain size that accomodates all my content)
+
+#### Colours and Gradients
+
+It all looks a bit dead... Maybe experiment with colour?
+
+do the glassy cards need a gradient through them?
+
+Draft background #270362
+
+Blue dot #0216C9
+
+I'd like the background to be a nice purple/blue colour
+
+current gradient: 200833 - 110026
+
+corner radius is now 15
+
+#### Fonts:
+
+Should fonts look etched/printed on the glass?
+
+Wordmark: Caveat
+
+Headings: Raleway
+
+Body: Raleway or Roboto Slab or Roboto? The full mockup cureently shows Roboto Slab
+
 ### Libraries
 
 [react-scroll](https://www.npmjs.com/package/react-scroll) if I decide to make it one page
@@ -93,4 +171,8 @@ https://ui.glass/generator/
 [react-acrylic](https://github.com/damaera/react-acrylic)
 
 [frosted-glass](https://www.npmjs.com/package/frosted-glass)
+
+### Link to Figma file
+
+https://www.figma.com/file/am1oeEiXQoFJjtFyFQZexB/New-Portfolio-Site?node-id=0%3A1
 
