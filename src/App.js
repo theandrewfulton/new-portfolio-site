@@ -14,6 +14,7 @@ import './App.css';
 
 // import scenes
 import { NavBar } from "./scenes/nav"
+import { Social } from "./scenes/social"
 import { Footer } from "./scenes/footer"
 
 // import "page" scenes
@@ -44,6 +45,8 @@ const App = () => {
           </Route>
         </Switch>
       </Router>
+      {/* Add Social component here, may move later as it is in a different position on Contact page */}
+      <Social />
       {/* display the footer content */}
       <Footer />
     </>
