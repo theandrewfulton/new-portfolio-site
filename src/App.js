@@ -19,6 +19,8 @@ import { Footer } from "./scenes/footer"
 // import "page" scenes
 import { Home } from "./scenes/home"
 import { About } from "./scenes/about"
+import { Projects } from "./scenes/projects"
+import { Contact } from "./scenes/contact"
 
 const App = () => {
   return (
@@ -28,12 +30,18 @@ const App = () => {
         {/* display the nav content, it needs to be inside the Router object to work correctly */}
         <NavBar />
         <Switch>
-        <Route path="/about">
-              <About />
-            </Route>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/projects">
+            <Projects />
+          </Route>
+          <Route path="/contact">
+            <Contact />
+          </Route>
           <Route path="/">
-              <Home />
-            </Route>
+            <Home />
+          </Route>
         </Switch>
       </Router>
       {/* display the footer content */}
