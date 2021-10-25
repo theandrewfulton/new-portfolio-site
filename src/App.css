@@ -1,0 +1,12 @@
+body {
+  color: white;
+  position: relative;
+  /* width: 320px; */
+  width: 100vw;
+  /* height: 568px; */
+  height: 100vh;
+  min-height: 100%;
+  box-sizing: border-box;
+  overflow-y: hidden;
+  background: linear-gradient(180deg, #200833 0%, #110026 100%);
+}
