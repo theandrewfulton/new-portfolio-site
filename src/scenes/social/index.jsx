@@ -25,19 +25,29 @@ export const Social = () => {
     return (
         <StyledSocial>
             <StyledIcon>
-                <FiGithub />
+                <a href="https://github.com/theandrewfulton" target="_blank" rel="noopener noreferrer">
+                    <FiGithub />
+                </a>
             </StyledIcon>
             <StyledIcon>
-                <AiOutlineMedium />
+                <a href="https://theandrewfulton.medium.com" target="_blank" rel="noopener noreferrer">
+                    <AiOutlineMedium />
+                </a>
             </StyledIcon>
             <StyledIcon>
-                <FiTwitter />
+                <a href="https://twitter.com/theandrewfulton" target="_blank" rel="noopener noreferrer">
+                    <FiTwitter />
+                </a>
             </StyledIcon>
             <StyledIcon>
-                <FiLinkedin />
+                <a href="https://www.linkedin.com/in/andrew-fulton-a713941b0/" target="_blank" rel="noopener noreferrer">
+                    <FiLinkedin />
+                </a>
             </StyledIcon>
             <StyledIcon>
-                <FiTwitch />
+                <a href="https://www.twitch.tv/andrewdoes" target="_blank" rel="noopener noreferrer">
+                    <FiTwitch />
+                </a>
             </StyledIcon>
         </StyledSocial>
     )
