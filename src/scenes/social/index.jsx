@@ -1,4 +1,6 @@
 import styled from "styled-components"
+import { FiGithub, FiMedium, FiTwitter, FiLinkedin, FiTwitch} from "react-icons/fi";
+import { AiOutlineMedium } from "react-icons/ai"
 
 const StyledSocial = styled.section `
     background: radial-gradient(100% 428429.78% at 100% -0.03%, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 100%);
@@ -23,13 +25,19 @@ export const Social = () => {
     return (
         <StyledSocial>
             <StyledIcon>
-                <p>icon section</p>
+                <FiGithub />
             </StyledIcon>
             <StyledIcon>
-                <p>icon section</p>
+                <AiOutlineMedium />
             </StyledIcon>
             <StyledIcon>
-                <p>icon section</p>
+                <FiTwitter />
+            </StyledIcon>
+            <StyledIcon>
+                <FiLinkedin />
+            </StyledIcon>
+            <StyledIcon>
+                <FiTwitch />
             </StyledIcon>
         </StyledSocial>
     )
