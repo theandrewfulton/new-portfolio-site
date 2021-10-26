@@ -1,6 +1,7 @@
 import styled from "styled-components"
 import { FiGithub, FiMedium, FiTwitter, FiLinkedin, FiTwitch} from "react-icons/fi";
 import { AiOutlineMedium } from "react-icons/ai"
+import ConfigIcon from "./iconFormat"
 
 const StyledSocial = styled.section `
     background: radial-gradient(100% 428429.78% at 100% -0.03%, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 100%);
@@ -19,6 +20,7 @@ const StyledIcon = styled.article `
     backdrop-filter: blur(40px);
     border-radius: 15px;
     /* margin: 10px; */
+    padding: 5px;
 `
 
 export const Social = () => {
@@ -26,27 +28,37 @@ export const Social = () => {
         <StyledSocial>
             <StyledIcon>
                 <a href="https://github.com/theandrewfulton" target="_blank" rel="noopener noreferrer">
-                    <FiGithub />
+                    <ConfigIcon>
+                        <FiGithub />
+                    </ConfigIcon>
                 </a>
             </StyledIcon>
             <StyledIcon>
                 <a href="https://theandrewfulton.medium.com" target="_blank" rel="noopener noreferrer">
-                    <AiOutlineMedium />
+                    <ConfigIcon>
+                        <AiOutlineMedium />
+                    </ConfigIcon>
                 </a>
             </StyledIcon>
             <StyledIcon>
                 <a href="https://twitter.com/theandrewfulton" target="_blank" rel="noopener noreferrer">
-                    <FiTwitter />
+                    <ConfigIcon>
+                        <FiTwitter />
+                    </ConfigIcon>
                 </a>
             </StyledIcon>
             <StyledIcon>
                 <a href="https://www.linkedin.com/in/andrew-fulton-a713941b0/" target="_blank" rel="noopener noreferrer">
-                    <FiLinkedin />
+                    <ConfigIcon>
+                        <FiLinkedin />
+                    </ConfigIcon>
                 </a>
             </StyledIcon>
             <StyledIcon>
                 <a href="https://www.twitch.tv/andrewdoes" target="_blank" rel="noopener noreferrer">
-                    <FiTwitch />
+                    <ConfigIcon>
+                        <FiTwitch />
+                    </ConfigIcon>
                 </a>
             </StyledIcon>
         </StyledSocial>
