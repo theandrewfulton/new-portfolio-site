@@ -61,6 +61,16 @@ As a Visitor I want to contact the author so that I can engage with them
 
 ## Tech Stack
 
+### Libraries
+
+react-icons
+
+styled-components
+
+(css)
+
+react-router
+
 ## Setup
 
 # Getting Started with Create React App

@@ -14,3 +14,13 @@ body {
   margin: 0;
   font-family: 'Raleway', sans-serif
 }
+
+/* override paragraph margin */
+p {
+  margin: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
