@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { FiGithub, FiMedium, FiTwitter, FiLinkedin, FiTwitch} from "react-icons/fi";
+import { FiGithub, FiTwitter, FiLinkedin, FiTwitch} from "react-icons/fi";
 import { AiOutlineMedium } from "react-icons/ai"
 import ConfigIcon from "./iconFormat"
 
