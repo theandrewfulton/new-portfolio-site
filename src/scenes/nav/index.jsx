@@ -1,11 +1,15 @@
-import {
-    Link
-} from "react-router-dom"
+import { Link } from "react-router-dom"
+import styled from "styled-components"
+
+
+const MyNav = styled.nav`
+color: red;
+`
 
 export const NavBar = () => {
 
     return (
-        <nav>
+        <MyNav>
             <p>This is the Nav Bar</p>
             <ul>
                 <li>
@@ -24,7 +28,7 @@ export const NavBar = () => {
                     <Link to="/contact">Contact</Link>
                 </li>
             </ul>
-        </nav>
+        </MyNav>
     )
 }
 
