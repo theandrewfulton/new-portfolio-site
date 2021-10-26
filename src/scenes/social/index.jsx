@@ -9,10 +9,12 @@ const StyledSocial = styled.section `
     backdrop-filter: blur(10px);
     border: 0.5px solid rgba(255, 255, 255, 0.5);
     border-radius: 15px;
-    margin: 20px;
+    margin: auto;
     padding: 10px;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    width: 80vw;
 `
 const StyledIcon = styled.article `
     background: radial-gradient(100% 100% at 0% 0%, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.15) 100%);
