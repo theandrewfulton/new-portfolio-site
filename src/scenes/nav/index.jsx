@@ -22,22 +22,23 @@ const StyledIcon = styled.article `
     /* margin: 10px; */
     padding: 5px;
 
-    /* the following are changed */
+    /* the following are changed from Social */
     /* margin: auto; */
     
     /* align-items: right; */
     /* text-align: right; */
     width: fit-content;
     float: right;
+    a {
+    margin: 15px;
+    }
 `
 
 // Styled links is a way of not modifying StyledIcon
 const StyledLinks = styled.a `
 
     /* text-align: right; */
-    a {
-    margin: 15px;
-    }
+    
 `
     
 
@@ -47,7 +48,7 @@ export const NavBar = () => {
         <DesktopNav>
             <p>This is the Nav Bar</p>
             <StyledIcon>
-                <StyledLinks>
+                {/* <StyledLinks> */}
                 {/* <ul> */}
                     {/* <li> */}
                         <Link to="/">Home</Link>
@@ -65,7 +66,7 @@ export const NavBar = () => {
                         <Link to="/contact">Contact</Link>
                     {/* </li> */}
                 {/* </ul> */}
-                </StyledLinks>
+                {/* </StyledLinks> */}
             </StyledIcon>
         </DesktopNav>
     )
