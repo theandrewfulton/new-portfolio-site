@@ -28,7 +28,12 @@ const StyledIcon = styled.article `
     /* align-items: right; */
     /* text-align: right; */
     width: fit-content;
-    float: right;
+    /* float right takes nav out of header bounds */
+    /* float: right; */
+    /* position relative right 0px aligns left again */
+    position: relative;
+    right: 0px;
+
     a {
     margin: 15px;
     }
