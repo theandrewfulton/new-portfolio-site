@@ -70,6 +70,8 @@ Footer with socials?
 
 ### Notes now that I'm working on it
 
+viewheight has gone all weird again. Investigate when refactoring
+
 #### Navbar
 
 bump navbar to top with some kind of animation when scrolling down?
