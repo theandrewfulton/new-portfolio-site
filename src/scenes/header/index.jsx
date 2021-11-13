@@ -3,7 +3,7 @@ import { NavBar } from "../nav"
 import Popup from 'reactjs-popup';
 
 // Same style as footer, consider making a component
-const HeaderStyle = styled.header`
+const DesktopHeader = styled.header`
 background: radial-gradient(100% 428429.78% at 100% -0.03%, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 100%);
 border: 0.5px rgba(255, 255, 255, 0.5);
 border-style: solid none;
@@ -25,17 +25,37 @@ p {
 } */
 `
 
-const Modal = () => (  <Popup trigger={<p>AF</p>} modal>    <span> <NavBar/> </span>  </Popup>);
+const MobileHeader = styled.header`
+    background: radial-gradient(100% 100% at 48.65% 0%, rgba(255, 0, 0, 0.4) 0%, rgba(255, 0, 0, 0.2) 100%);
+    border: 0.1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+    width: fit-content;
+    padding: 10px;
+    font-family: 'Caveat', cursive;
+    font-size: 24px;
+    margin-left: 5px;
+    margin-top: 1px;
+`
+const MobileHeaderIcon = () => {
+    return (
+        <MobileHeader>
+            <p>AF</p>
+        </MobileHeader>
+    )
+}
+
+const Modal = () => (  <Popup trigger={MobileHeaderIcon} modal>    <span> <NavBar/> </span>  </Popup>);
 
 export const Header = () => {
 
     return (
         <>
             <Modal/>
-            <HeaderStyle>
+            <DesktopHeader>
                 <p>Andrew Fulton</p>
                 <NavBar/>
-            </HeaderStyle>
+            </DesktopHeader>
         </>
     )
 }
