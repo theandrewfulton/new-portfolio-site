@@ -26,15 +26,16 @@ const StyledIcon = styled.article `
     backdrop-filter: blur(40px);
     border-radius: 15px;
     margin: 10px;
-    padding: 5px;
+    /* padding: 5px; */
 
     /* the following are changed from Social */
     /* fit content seemingly not required when floated right */
        /* width: fit-content; */
     /* float right takes nav out of header bounds without clearfix*/
     float: right;
+    padding: 20px;
     a {
-    margin: 15px;
+    margin: 20px;
     }
 `
 
