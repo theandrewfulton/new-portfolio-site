@@ -14,6 +14,8 @@ display: flex;
 justify-content: space-between;
 p {
     margin-left: 10%;
+    font-family: 'Caveat', cursive;
+    font-size: 48px;
 }
 
 /* remove bullet point format from unordered list */
