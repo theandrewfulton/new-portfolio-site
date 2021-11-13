@@ -13,7 +13,8 @@ import {
 import './App.css';
 
 // import scenes
-import { NavBar } from "./scenes/nav"
+// import { NavBar } from "./scenes/nav"
+import { Header } from "./scenes/header"
 import { Social } from "./scenes/social"
 import { Footer } from "./scenes/footer"
 
@@ -29,7 +30,8 @@ const App = () => {
         {/* React routes and paths */}
         <Router>
           {/* display the nav content, it needs to be inside the Router object to work correctly */}
-          <NavBar />
+          {/* <NavBar /> */}
+          <Header />
           <Switch>
             <Route path="/about">
               <About />

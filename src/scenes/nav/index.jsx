@@ -1,25 +1,6 @@
 import { Link } from "react-router-dom"
 import styled from "styled-components"
 
-// Same style as footer, consider making a component
-const DesktopNav = styled.nav`
-color: red;
-background: radial-gradient(100% 428429.78% at 100% -0.03%, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 100%);
-border: 0.5px rgba(255, 255, 255, 0.5);
-border-style: solid none;
-backdrop-filter: blur(10px);
-/* clearfix hack to align right and stay in bounds */
-::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-/* remove bullet point format from unordered list */
-/* ul {
-    list-style-type: none;
-} */
-`
 // StyledIcon is copied from Social. Consider making a component
 const StyledIcon = styled.article `
     background: radial-gradient(100% 100% at 0% 0%, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.15) 100%);
@@ -51,8 +32,6 @@ const StyledIcon = styled.article `
 export const NavBar = () => {
 
     return (
-        <DesktopNav>
-            <p>This is the Nav Bar</p>
             <StyledIcon>
                 {/* <StyledLinks> */}
                 {/* <ul> */}
@@ -74,7 +53,6 @@ export const NavBar = () => {
                 {/* </ul> */}
                 {/* </StyledLinks> */}
             </StyledIcon>
-        </DesktopNav>
     )
 }
 
