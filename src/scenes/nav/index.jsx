@@ -13,8 +13,6 @@ const StyledIcon = styled.article `
     /* the following are changed from Social */
     /* fit content seemingly not required when floated right */
        /* width: fit-content; */
-    /* float right takes nav out of header bounds without clearfix*/
-    float: right;
     padding: 20px;
     a {
     margin: 20px;

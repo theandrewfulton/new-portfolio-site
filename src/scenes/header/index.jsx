@@ -7,26 +7,23 @@ background: radial-gradient(100% 428429.78% at 100% -0.03%, rgba(255, 255, 255, 
 border: 0.5px rgba(255, 255, 255, 0.5);
 border-style: solid none;
 backdrop-filter: blur(10px);
-/* clearfix hack to align right and stay in bounds */
-::after {
-    content: "";
-    clear: both;
-    display: table;
-}
+
+/* Things that are different */
+margin-top: 30px;
+display: flex;
+justify-content: space-between;
 
 /* remove bullet point format from unordered list */
 /* ul {
     list-style-type: none;
 } */
 `
-
 export const Header = () => {
 
     return (
         <HeaderStyle>
             <p>Andrew Fulton</p>
             <NavBar/>
-
         </HeaderStyle>
     )
 }

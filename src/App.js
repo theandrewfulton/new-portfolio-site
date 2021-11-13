@@ -13,7 +13,6 @@ import {
 import './App.css';
 
 // import scenes
-// import { NavBar } from "./scenes/nav"
 import { Header } from "./scenes/header"
 import { Social } from "./scenes/social"
 import { Footer } from "./scenes/footer"
