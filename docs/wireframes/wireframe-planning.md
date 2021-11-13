@@ -84,6 +84,10 @@ Mobile navbar has my name as a wordmark and condenses to AF in the corner on scr
 
 scroll up and border around navbar disappears?
 
+underline for current page
+
+underline link on hover
+
 
 
 #### About
