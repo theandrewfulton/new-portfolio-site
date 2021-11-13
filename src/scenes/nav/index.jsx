@@ -7,7 +7,8 @@ const StyledIcon = styled.article `
     border: 0.5px solid rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(40px);
     border-radius: 15px;
-    margin: 10px;
+    /* margin: 10px; */
+    margin: 10px 80px 10px 10px;
     /* padding: 5px; */
 
     /* the following are changed from Social */

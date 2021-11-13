@@ -12,6 +12,9 @@ backdrop-filter: blur(10px);
 margin-top: 30px;
 display: flex;
 justify-content: space-between;
+p {
+    margin-left: 10%;
+}
 
 /* remove bullet point format from unordered list */
 /* ul {
