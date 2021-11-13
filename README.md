@@ -73,6 +73,8 @@ styled-components
 
 react-router
 
+reactjs-popup
+
 ## Setup
 
 # Getting Started with Create React App
