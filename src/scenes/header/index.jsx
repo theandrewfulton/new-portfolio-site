@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import { NavBar } from "../nav"
+import Popup from 'reactjs-popup';
 
 // Same style as footer, consider making a component
 const HeaderStyle = styled.header`
@@ -23,13 +24,19 @@ p {
     list-style-type: none;
 } */
 `
+
+const Modal = () => (  <Popup trigger={<p>AF</p>} modal>    <span> <NavBar/> </span>  </Popup>);
+
 export const Header = () => {
 
     return (
-        <HeaderStyle>
-            <p>Andrew Fulton</p>
-            <NavBar/>
-        </HeaderStyle>
+        <>
+            <Modal/>
+            <HeaderStyle>
+                <p>Andrew Fulton</p>
+                <NavBar/>
+            </HeaderStyle>
+        </>
     )
 }
 
