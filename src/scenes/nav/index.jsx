@@ -7,6 +7,12 @@ color: red;
 background: radial-gradient(100% 428429.78% at 100% -0.03%, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 100%);
 border: 0.5px solid rgba(255, 255, 255, 0.5);
 backdrop-filter: blur(10px);
+/* clearfix hack to align right and stay in bounds */
+::after {
+    content: "";
+    clear: both;
+    display: table;
+}
 
 /* remove bullet point format from unordered list */
 /* ul {
@@ -19,32 +25,25 @@ const StyledIcon = styled.article `
     border: 0.5px solid rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(40px);
     border-radius: 15px;
-    /* margin: 10px; */
+    margin: 10px;
     padding: 5px;
 
     /* the following are changed from Social */
-    /* margin: auto; */
-    
-    /* align-items: right; */
-    /* text-align: right; */
-    width: fit-content;
-    /* float right takes nav out of header bounds */
-    /* float: right; */
-    /* position relative right 0px aligns left again */
-    position: relative;
-    right: 0px;
-
+    /* fit content seemingly not required when floated right */
+       /* width: fit-content; */
+    /* float right takes nav out of header bounds without clearfix*/
+    float: right;
     a {
     margin: 15px;
     }
 `
 
 // Styled links is a way of not modifying StyledIcon
-const StyledLinks = styled.a `
+// const StyledLinks = styled.a `
 
     /* text-align: right; */
     
-`
+// `
     
 
 export const NavBar = () => {
