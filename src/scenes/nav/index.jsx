@@ -20,38 +20,58 @@ const StyledIcon = styled.article `
     }
 `
 
+// styled article or something else?
+const MobileNavStyle = styled.article `
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    background: radial-gradient(100% 100% at 49.55% 100%, rgba(255, 0, 0, 0.4) 0%, rgba(255, 0, 0, 0.2) 100%);
+    border: 0.1px solid #FFFFFF;
+    /* issues with blur in firefox */
+    /* if detected browser is firefox then add a new element behind mobile hamburger menu? */
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    border-radius: 10px;
+    a {
+        margin: 30px;
+    }
+`
+
+
 // Styled links is a way of not modifying StyledIcon
 // const StyledLinks = styled.a `
 
     /* text-align: right; */
     
 // `
-    
 
-export const NavBar = () => {
+const NavContent = () => {
+    return(
+        <>
+            <Link to="/">Home</Link>
+            <Link to="/about">About</Link>
+            <Link to="/projects">Projects</Link>
+            <a href="https://theandrewfulton.medium.com" target="_blank" rel="noopener noreferrer">Articles</a>
+            <Link to="/contact">Contact</Link>
+        </>
+    )
+}
+
+export const DesktopNavBar = () => {
 
     return (
             <StyledIcon>
-                {/* <StyledLinks> */}
-                {/* <ul> */}
-                    {/* <li> */}
-                        <Link to="/">Home</Link>
-                    {/* </li> */}
-                    {/* <li> */}
-                        <Link to="/about">About</Link>
-                    {/* </li> */}
-                    {/* <li> */}
-                        <Link to="/projects">Projects</Link>
-                    {/* </li> */}
-                    {/* <li> */}
-                    <a href="https://theandrewfulton.medium.com" target="_blank" rel="noopener noreferrer">Articles</a>
-                    {/* </li> */}
-                    {/* <li> */}
-                        <Link to="/contact">Contact</Link>
-                    {/* </li> */}
-                {/* </ul> */}
-                {/* </StyledLinks> */}
+                <NavContent/>
             </StyledIcon>
+    )
+}
+
+export const MobileNavBar = () => {
+    return (
+        <MobileNavStyle>
+            Exit Button
+            <NavContent/>
+        </MobileNavStyle>
     )
 }
 
