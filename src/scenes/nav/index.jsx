@@ -31,10 +31,16 @@ const MobileNavStyle = styled.article `
     /* if detected browser is firefox then add a new element behind mobile hamburger menu? */
     backdrop-filter: blur(5px);
     border-radius: 10px;
-    border-radius: 10px;
     a {
         margin: 30px;
     }
+`
+
+// Add new component for firefox compatibility. Still need to add logic for this
+const MobileFirefoxLayer = styled.article `
+ background: linear-gradient(180deg, #200833 0%, #110026 100%);
+ border-radius: 10px;
+
 `
 
 
@@ -68,10 +74,12 @@ export const DesktopNavBar = () => {
 
 export const MobileNavBar = () => {
     return (
+        <MobileFirefoxLayer>
         <MobileNavStyle>
             Exit Button
             <NavContent/>
         </MobileNavStyle>
+        </MobileFirefoxLayer>
     )
 }
 
