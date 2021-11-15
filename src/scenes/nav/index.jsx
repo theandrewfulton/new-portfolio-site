@@ -32,7 +32,9 @@ const MobileNavStyle = styled.article `
     backdrop-filter: blur(5px);
     border-radius: 10px;
     a {
-        margin: 30px;
+        margin: 10px 30px;
+        padding: 20px;
+        border: 0.1px solid #FFFFFF;
     }
 `
 
