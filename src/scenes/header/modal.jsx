@@ -1,7 +1,8 @@
 import React from 'react';
 import Popup from 'reactjs-popup';
 
-export default () => (
+export const Modal = () => {
+    return (
       <Popup
           trigger={<button className="button"> Open Modal </button>}
             modal
@@ -48,4 +49,6 @@ export default () => (
                     </div>
                 </div>
                 )}
-        </Popup>);
+        </Popup>
+    )
+};

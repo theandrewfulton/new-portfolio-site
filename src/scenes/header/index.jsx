@@ -1,6 +1,7 @@
 import styled from "styled-components"
 import { DesktopNavBar, MobileNavBar } from "../nav"
-import Popup from 'reactjs-popup';
+// import Popup from 'reactjs-popup';
+import { Modal } from "./modal"
 
 // Same style as footer, consider making a component
 const DesktopHeader = styled.header`
@@ -47,7 +48,7 @@ const MobileHeaderIcon = () => {
 }
 
 // pop up hamburger menu using reactjs-popup
-const Modal = () => (  <Popup trigger={MobileHeaderIcon} modal>    <span> <MobileNavBar/> </span>  </Popup>);
+// const Modal = () => (  <Popup trigger={MobileHeaderIcon} modal>    <span> <MobileNavBar/> </span>  </Popup>);
 
 export const Header = () => {
 
