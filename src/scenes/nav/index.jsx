@@ -31,7 +31,7 @@ const MobileNavStyle = styled.article `
     /* if detected browser is firefox then add a new element behind mobile hamburger menu? */
     backdrop-filter: blur(5px);
     border-radius: 10px;
-    a {
+    a, p {
         margin: 10px 30px;
         padding: 20px;
         border: 0.1px solid #FFFFFF;
