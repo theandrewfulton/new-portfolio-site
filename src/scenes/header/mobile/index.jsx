@@ -64,11 +64,14 @@ const MobileHeader = styled.header`
     backdrop-filter: blur(5px);
     border-radius: 5px;
     width: fit-content;
-    padding: 10px;
+    padding: 20px;
     font-family: 'Caveat', cursive;
     font-size: 24px;
     margin-left: 5px;
     margin-top: 1px;
+    cursor: pointer;
+    /* Issues with fixed position but need a solution */
+    /* position: fixed; */
     :hover {
         background: radial-gradient(100% 100% at 0% 0%, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.15) 100%);
     }
@@ -83,7 +86,7 @@ const MobileFirefoxLayer = styled.article `
 const MobileHeaderIcon = () => {
     return (
         <MobileHeader>
-            <p>AF</p>
+            AF
         </MobileHeader>
     )
 }
@@ -99,7 +102,6 @@ export const Modal = () => {
         {close => (
             <>
                 <CloseButton onClick={close}>
-                    {/* &times; */}
                     X
                 </CloseButton>
                 <MobileFirefoxLayer>
