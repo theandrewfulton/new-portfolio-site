@@ -94,6 +94,8 @@ close mobile navbar after clicking link?
 
 hover effects for links and icons
 
+mobile hamburger icon scrolls with content
+
 #### About
 
 Show all 3 showcase sections side-by-side or one vertically, never 2.
