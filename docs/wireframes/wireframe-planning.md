@@ -96,6 +96,8 @@ hover effects for links and icons
 
 mobile hamburger icon scrolls with content
 
+p vs Link. I've been basing this on seeing the hand cursor when clicking but this menu will mostly be interacted with on touch devices
+
 #### About
 
 Show all 3 showcase sections side-by-side or one vertically, never 2.

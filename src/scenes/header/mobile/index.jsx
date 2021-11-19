@@ -19,15 +19,38 @@ const MobileNavStyle = styled.article `
         padding: 20px;
         border: 0.1px solid #FFFFFF;
         border-radius: 10px;
+/* hover not fabulously helpful on mobile but still good for unmaximised browsers */
         :hover {
             background-color: #110026;
         }
     }
+
     // Styling for Close Menu button inside Nav
     .closemenubutton {
         background-color: #110026;
     }
 `
+
+const CloseButton = styled.p `
+    background: radial-gradient(100% 100% at 0% 0%, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.15) 100%);
+    border: 0.5px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(40px);
+    border-radius: 10px;
+    margin: 0;
+    /* padding: 0px 5px; */
+    position: absolute;
+    display: block;
+    right: -10px;
+    top: -32px;
+    font-size: 30px;
+    cursor: pointer;
+    height: 30px;
+    line-height: 0.25;
+    justify-content: center;
+
+    /* the following are changed from Social */
+`
+
 // mobile header icon styling
 const MobileHeaderIcon = () => {
     return (
@@ -57,9 +80,6 @@ const MobileFirefoxLayer = styled.article `
 
 `
 
-// pop up hamburger menu using reactjs-popup
-// const Modal = () => (  <Popup trigger={MobileHeaderIcon} modal>    <span> <MobileNavBar/> </span>  </Popup>);
-
 // custom hamburger menu using reactjs-popup
 export const Modal = () => {
     return (
@@ -69,11 +89,12 @@ export const Modal = () => {
             nested
         >
         {close => (
-            <div className="modal">
-                <button className="close" onClick={close}>
+            <>
+                <CloseButton>
+                <p onClick={close}>
                     &times;
-                </button>
-                {/* styled icon for close button? */}
+                </p>
+                </CloseButton>
                 <MobileFirefoxLayer>
                     <MobileNavStyle>
                         <Link className="closemenubutton" to=""
@@ -86,7 +107,7 @@ export const Modal = () => {
                         <NavContent/>
                     </MobileNavStyle>
                 </MobileFirefoxLayer>
-            </div>
+            </>
                 )}
         </Popup>
     )
