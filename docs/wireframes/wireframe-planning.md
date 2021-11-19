@@ -90,7 +90,9 @@ underline for current page
 
 underline link on hover
 
+close mobile navbar after clicking link?
 
+hover effects for links and icons
 
 #### About
 
