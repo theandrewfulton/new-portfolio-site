@@ -18,6 +18,14 @@ const MobileNavStyle = styled.article `
         margin: 10px 30px;
         padding: 20px;
         border: 0.1px solid #FFFFFF;
+        border-radius: 10px;
+        :hover {
+            background-color: #110026;
+        }
+    }
+    // Styling for Close Menu button inside Nav
+    .closemenubutton {
+        background-color: #110026;
     }
 `
 // mobile header icon styling
@@ -65,16 +73,17 @@ export const Modal = () => {
                 <button className="close" onClick={close}>
                     &times;
                 </button>
+                {/* styled icon for close button? */}
                 <MobileFirefoxLayer>
                     <MobileNavStyle>
+                        <Link className="closemenubutton" to=""
+                                onClick={() => {
+                                    close();
+                                }}
+                            >
+                            Close Menu
+                            </Link>
                         <NavContent/>
-                        <Link to=""
-                            onClick={() => {
-                                close();
-                            }}
-                        >
-                        close modal
-                        </Link>
                     </MobileNavStyle>
                 </MobileFirefoxLayer>
             </div>
