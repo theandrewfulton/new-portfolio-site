@@ -72,6 +72,8 @@ Footer with socials?
 
 viewheight has gone all weird again. Investigate when refactoring
 
+add components for common colours
+
 #### Navbar
 
 bump navbar to top with some kind of animation when scrolling down?

@@ -21,13 +21,19 @@ const MobileNavStyle = styled.article `
         border-radius: 10px;
 /* hover not fabulously helpful on mobile but still good for unmaximised browsers */
         :hover {
-            background-color: #110026;
+            /* background-color: #110026; */
+            background: radial-gradient(100% 100% at 0% 0%, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.15) 100%);
         }
     }
 
     // Styling for Close Menu button inside Nav
     .closemenubutton {
-        background-color: #110026;
+        /* background-color: #110026; */
+        background: radial-gradient(100% 100% at 0% 0%, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.15) 100%);
+        :hover{
+            /* background: radial-gradient(100% 100% at 49.55% 100%, rgba(255, 0, 0, 0.4) 0%, rgba(255, 0, 0, 0.2) 100%); */
+            background-color: #110026;
+        }
     }
 `
 
@@ -41,11 +47,15 @@ const CloseButton = styled.p `
     display: block;
     right: -10px;
     top: -32px;
-    font-size: 30px;
+    font-size: 20px;
     cursor: pointer;
-    height: 30px;
-    line-height: 0.25;
-    justify-content: center;
+    height: 25px;
+    display: flex;
+    padding: 0px 10px;
+    align-items: center;
+    :hover {
+        background: radial-gradient(100% 100% at 49.55% 100%, rgba(255, 0, 0, 0.4) 0%, rgba(255, 0, 0, 0.2) 100%);
+    }
 `
 
 const MobileHeader = styled.header`
@@ -68,7 +78,6 @@ const MobileHeader = styled.header`
 const MobileFirefoxLayer = styled.article `
  background: linear-gradient(180deg, #200833 0%, #110026 100%);
  border-radius: 10px;
-
 `
 // mobile header icon styling
 const MobileHeaderIcon = () => {
@@ -90,9 +99,8 @@ export const Modal = () => {
         {close => (
             <>
                 <CloseButton onClick={close}>
-                <p>
-                    &times;
-                </p>
+                    {/* &times; */}
+                    X
                 </CloseButton>
                 <MobileFirefoxLayer>
                     <MobileNavStyle>
