@@ -37,7 +37,6 @@ const CloseButton = styled.p `
     backdrop-filter: blur(40px);
     border-radius: 10px;
     margin: 0;
-    /* padding: 0px 5px; */
     position: absolute;
     display: block;
     right: -10px;
@@ -47,8 +46,6 @@ const CloseButton = styled.p `
     height: 30px;
     line-height: 0.25;
     justify-content: center;
-
-    /* the following are changed from Social */
 `
 
 // mobile header icon styling

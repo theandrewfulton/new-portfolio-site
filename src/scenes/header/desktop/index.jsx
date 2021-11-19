@@ -18,10 +18,6 @@ p {
     font-size: 48px;
 }
 
-/* remove bullet point format from unordered list */
-/* ul {
-    list-style-type: none;
-} */
 `
 
 // StyledIcon is copied from Social. Consider making a component
@@ -40,6 +36,9 @@ const StyledIcon = styled.article `
     padding: 20px;
     a {
     margin: 20px;
+    :hover {
+        text-decoration: underline;
+    }
     }
 `
 // Styled links is a way of not modifying StyledIcon
@@ -48,9 +47,6 @@ const StyledIcon = styled.article `
     /* text-align: right; */
     
 // `
-
-// pop up hamburger menu using reactjs-popup
-// const Modal = () => (  <Popup trigger={MobileHeaderIcon} modal>    <span> <MobileNavBar/> </span>  </Popup>);
 
 export const DesktopHeader = () => {
     return (
