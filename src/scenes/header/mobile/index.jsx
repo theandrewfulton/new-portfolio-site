@@ -48,15 +48,6 @@ const CloseButton = styled.p `
     justify-content: center;
 `
 
-// mobile header icon styling
-const MobileHeaderIcon = () => {
-    return (
-        <MobileHeader>
-            <p>AF</p>
-        </MobileHeader>
-    )
-}
-
 const MobileHeader = styled.header`
     background: radial-gradient(100% 100% at 48.65% 0%, rgba(255, 0, 0, 0.4) 0%, rgba(255, 0, 0, 0.2) 100%);
     border: 0.1px solid rgba(255, 255, 255, 0.5);
@@ -68,6 +59,9 @@ const MobileHeader = styled.header`
     font-size: 24px;
     margin-left: 5px;
     margin-top: 1px;
+    :hover {
+        background: radial-gradient(100% 100% at 0% 0%, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.15) 100%);
+    }
 `
 
 // Add new component for firefox compatibility. Still need to add logic for this
@@ -76,6 +70,14 @@ const MobileFirefoxLayer = styled.article `
  border-radius: 10px;
 
 `
+// mobile header icon styling
+const MobileHeaderIcon = () => {
+    return (
+        <MobileHeader>
+            <p>AF</p>
+        </MobileHeader>
+    )
+}
 
 // custom hamburger menu using reactjs-popup
 export const Modal = () => {
@@ -87,13 +89,14 @@ export const Modal = () => {
         >
         {close => (
             <>
-                <CloseButton>
-                <p onClick={close}>
+                <CloseButton onClick={close}>
+                <p>
                     &times;
                 </p>
                 </CloseButton>
                 <MobileFirefoxLayer>
                     <MobileNavStyle>
+                        <NavContent/>
                         <Link className="closemenubutton" to=""
                                 onClick={() => {
                                     close();
@@ -101,7 +104,6 @@ export const Modal = () => {
                             >
                             Close Menu
                             </Link>
-                        <NavContent/>
                     </MobileNavStyle>
                 </MobileFirefoxLayer>
             </>

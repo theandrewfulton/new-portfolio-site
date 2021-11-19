@@ -17,7 +17,6 @@ p {
     font-family: 'Caveat', cursive;
     font-size: 48px;
 }
-
 `
 
 // StyledIcon is copied from Social. Consider making a component

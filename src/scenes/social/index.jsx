@@ -23,6 +23,9 @@ const StyledIcon = styled.article `
     border-radius: 15px;
     /* margin: 10px; */
     padding: 5px;
+    :hover {
+        background: radial-gradient(100% 100% at 49.55% 100%, rgba(255, 0, 0, 0.4) 0%, rgba(255, 0, 0, 0.2) 100%);
+    }
 `
 
 export const Social = () => {
