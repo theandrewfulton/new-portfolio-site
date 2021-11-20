@@ -8,11 +8,11 @@ const MobileNavStyle = styled.article `
     display:flex;
     flex-direction: column;
     text-align: center;
-    background: radial-gradient(100% 100% at 49.55% 100%, rgba(255, 0, 0, 0.4) 0%, rgba(255, 0, 0, 0.2) 100%);
+    /* background: radial-gradient(100% 100% at 49.55% 100%, rgba(255, 0, 0, 0.4) 0%, rgba(255, 0, 0, 0.2) 100%); */
     border: 0.1px solid #FFFFFF;
     /* issues with blur in firefox */
     /* if detected browser is firefox then add a new element behind mobile hamburger menu? */
-    backdrop-filter: blur(5px);
+    /* backdrop-filter: blur(5px); */
     border-radius: 10px;
     a {
         margin: 10px 30px;
@@ -79,8 +79,15 @@ const MobileHeader = styled.header`
 
 // Add new component for firefox compatibility. Still need to add logic for this
 const MobileFirefoxLayer = styled.article `
- background: linear-gradient(180deg, #200833 0%, #110026 100%);
+ /* background: linear-gradient(180deg, #200833 0%, #110026 100%); */
+ background: radial-gradient(100% 100% at 49.55% 100%, #660000 0%, #330000 100%);
  border-radius: 10px;
+ @supports ((-webkit-backdrop-filter: blur(5px)) or (backdrop-filter: blur(5px))) {
+    background: radial-gradient(100% 100% at 49.55% 100%, rgba(255, 0, 0, 0.4) 0%, rgba(255, 0, 0, 0.2) 100%);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+  
+}
 `
 // mobile header icon styling
 const MobileHeaderIcon = () => {
