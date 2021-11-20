@@ -1,10 +1,10 @@
 import { DesktopHeader } from "./desktop"
-import { Modal } from "./mobile"
+import { MobileHeader } from "./mobile"
 export const Header = () => {
 
     return (
         <>
-            <Modal/>
+            <MobileHeader/>
             <DesktopHeader/>
         </>
     )

@@ -20,7 +20,7 @@ p {
   margin: 10px;
 }
 
-a {
+a, button {
   text-decoration: none;
   color: white;
 }

@@ -20,7 +20,8 @@ p {
 `
 
 // StyledIcon is copied from Social. Consider making a component
-const StyledIcon = styled.article `
+// changed to .nav here
+const StyledIcon = styled.nav `
     background: radial-gradient(100% 100% at 0% 0%, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.15) 100%);
     border: 0.5px solid rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(40px);
@@ -40,12 +41,6 @@ const StyledIcon = styled.article `
     }
     }
 `
-// Styled links is a way of not modifying StyledIcon
-// const StyledLinks = styled.a `
-
-    /* text-align: right; */
-    
-// `
 
 export const DesktopHeader = () => {
     return (
