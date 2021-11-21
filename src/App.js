@@ -13,7 +13,7 @@ import {
 import './App.css';
 
 // import scenes
-import { NavBar } from "./scenes/nav"
+import { Header } from "./scenes/header"
 import { Social } from "./scenes/social"
 import { Footer } from "./scenes/footer"
 
@@ -26,25 +26,26 @@ import { Contact } from "./scenes/contact"
 const App = () => {
   return (
     <>
-      {/* React routes and paths */}
-      <Router>
-        {/* display the nav content, it needs to be inside the Router object to work correctly */}
-        <NavBar />
-        <Switch>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/projects">
-            <Projects />
-          </Route>
-          <Route path="/contact">
-            <Contact />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
-      </Router>
+        {/* React routes and paths */}
+        <Router>
+          {/* display the nav content, it needs to be inside the Router object to work correctly */}
+          {/* <NavBar /> */}
+          <Header />
+          <Switch>
+            <Route path="/about">
+              <About />
+            </Route>
+            <Route path="/projects">
+              <Projects />
+            </Route>
+            <Route path="/contact">
+              <Contact />
+            </Route>
+            <Route path="/">
+              <Home />
+            </Route>
+          </Switch>
+        </Router>
       {/* Add Social component here, may move later as it is in a different position on Contact page */}
       <Social />
       {/* display the footer content */}

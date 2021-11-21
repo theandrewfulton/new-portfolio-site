@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Raleway&display=swap');
+
+body {
+  color: white;
+  position: relative;
+  /* width: 320px; */
+  width: 100vw;
+  /* height: 568px; */
+  height: 98vh;
+  /* min-height: 100%; */
+  box-sizing: border-box;
+  /* overflow-y: hidden; */
+  background: linear-gradient(180deg, #200833 0%, #110026 100%);
+  margin: 0;
+  font-family: 'Raleway', sans-serif
+}
+
+/* override paragraph margin */
+p {
+  margin: 10px;
+}
+
+a, button {
+  text-decoration: none;
+  color: white;
+}
+
+.active {
+  text-decoration: underline;
+}
