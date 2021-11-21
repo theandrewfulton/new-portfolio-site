@@ -12,6 +12,9 @@ backdrop-filter: blur(10px);
 margin-top: 30px;
 display: flex;
 justify-content: space-between;
+position: -webkit-sticky; /* Safari */
+position: sticky;
+top: 0;
 p {
     margin-left: 10%;
     font-family: 'Caveat', cursive;
