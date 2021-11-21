@@ -35,6 +35,8 @@ As the Owner I want the copyright year to update automatically so that I don't h
 
 As a Visitor I want links to the Owner's Social Media so that I can connect and engage with them on other platforms
 
+As a Visitor I want to easily navigate between pages on any screen size so that I have a positive experience and exploring the site is frictionless
+
 ### Home
 
 As a Visitor I want the landing page to be engaging and tell me why I'm visiting so that I am encouraged to explore the site
@@ -70,6 +72,8 @@ styled-components
 (css)
 
 react-router
+
+reactjs-popup
 
 ## Setup
 

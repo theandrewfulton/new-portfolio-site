@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Raleway&display=swap');
 
 body {
   color: white;
@@ -20,7 +20,11 @@ p {
   margin: 10px;
 }
 
-a {
+a, button {
   text-decoration: none;
   color: white;
+}
+
+.active {
+  text-decoration: underline;
 }
