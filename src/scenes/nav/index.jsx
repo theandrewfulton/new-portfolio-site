@@ -1,35 +1,13 @@
-import { Link } from "react-router-dom"
-import styled from "styled-components"
+import { NavLink } from "react-router-dom"
 
-
-const MyNav = styled.nav`
-color: red;
-`
-
-export const NavBar = () => {
-
-    return (
-        <MyNav>
-            <p>This is the Nav Bar</p>
-            <ul>
-                <li>
-                    <Link to="/">Home</Link>
-                </li>
-                <li>
-                    <Link to="/about">About</Link>
-                </li>
-                <li>
-                    <Link to="/projects">Projects</Link>
-                </li>
-                <li>
-                <a href="https://theandrewfulton.medium.com" target="_blank" rel="noopener noreferrer">Articles</a>
-                </li>
-                <li>
-                    <Link to="/contact">Contact</Link>
-                </li>
-            </ul>
-        </MyNav>
+export const NavContent = () => {
+    return(
+        <>
+            <NavLink exact activeClassName="active" to="/">Home</NavLink>
+            <NavLink activeClassName="active" to="/about">About</NavLink>
+            <NavLink activeClassName="active" to="/projects">Projects</NavLink>
+            <a href="https://theandrewfulton.medium.com" target="_blank" rel="noopener noreferrer">Articles</a>
+            <NavLink activeClassName="active" to="/contact">Contact</NavLink>
+        </>
     )
 }
-
-  

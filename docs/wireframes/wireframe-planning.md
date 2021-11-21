@@ -70,13 +70,19 @@ Footer with socials?
 
 ### Notes now that I'm working on it
 
+viewheight has gone all weird again. Investigate when refactoring
+
+add components for common colours
+
+create component for handling background-blur workaround?
+
+create component for desktop vs mobile logic?
+
 #### Navbar
 
 bump navbar to top with some kind of animation when scrolling down?
 
 red on top layer frosted glass around desktop navbar?
-
-Touch targets for hamburger menu may be a little small. Full screen menu instead?
 
 turn navbar from red to default blue/purple on scroll?
 
@@ -84,7 +90,7 @@ Mobile navbar has my name as a wordmark and condenses to AF in the corner on scr
 
 scroll up and border around navbar disappears?
 
-
+close mobile navbar after clicking link?
 
 #### About
 
