@@ -15,8 +15,10 @@ const MobileHeaderStyle = styled.button`
     margin-left: 5px;
     margin-top: 1px;
     cursor: pointer;
-    /* Issues with fixed position but need a solution */
-    /* position: fixed; */
+    /* icon appears at top but stays in top of viewport on scroll */
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
     :hover {
         background: radial-gradient(100% 100% at 0% 0%, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.15) 100%);
     }
