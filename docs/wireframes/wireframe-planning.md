@@ -74,13 +74,15 @@ viewheight has gone all weird again. Investigate when refactoring
 
 add components for common colours
 
+create component for handling background-blur workaround?
+
+create component for desktop vs mobile logic?
+
 #### Navbar
 
 bump navbar to top with some kind of animation when scrolling down?
 
 red on top layer frosted glass around desktop navbar?
-
-Touch targets for hamburger menu may be a little small. Full screen menu instead?
 
 turn navbar from red to default blue/purple on scroll?
 
@@ -88,17 +90,7 @@ Mobile navbar has my name as a wordmark and condenses to AF in the corner on scr
 
 scroll up and border around navbar disappears?
 
-underline for current page
-
-underline link on hover
-
 close mobile navbar after clicking link?
-
-hover effects for links and icons
-
-mobile hamburger icon scrolls with content
-
-p vs Link. I've been basing this on seeing the hand cursor when clicking but this menu will mostly be interacted with on touch devices
 
 #### About
 
