@@ -76,6 +76,9 @@ react-router
 reactjs-popup
 
 ## Setup
+Insall npm or yarn
+yarn install
+yarn start
 
 # Getting Started with Create React App
 
