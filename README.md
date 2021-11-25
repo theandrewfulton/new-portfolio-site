@@ -76,7 +76,7 @@ react-router
 reactjs-popup
 
 ## Setup
-Insall npm or yarn
+Insall npm or yarn: https://classic.yarnpkg.com/en/docs/install
 yarn install
 yarn start
 
