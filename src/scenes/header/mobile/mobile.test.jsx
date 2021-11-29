@@ -60,3 +60,4 @@ test('Mobile navigation closes when Close Menu button is clicked', () => {
     expect(closedNav).toBeNull()
 })
 // todo render only when screen size < 950px
+// todo logic for testing firefox detection?

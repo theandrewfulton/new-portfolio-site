@@ -24,3 +24,4 @@ test('renders the Desktop navigation', () => {
 })
 
 // todo render only when screen size >= 950px
+// todo logic for testing firefox detection?
