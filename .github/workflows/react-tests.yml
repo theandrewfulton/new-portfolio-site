@@ -4,7 +4,7 @@ name: React Tests with Jest and testing-library
 # execute on events
 on:
   push:
-  pull-request:
+  pull_request:
     branches:
       - main
       - staging
@@ -23,7 +23,7 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: 12
-           cache: 'yarn'
+          #  cache: 'yarn'
 
       # 2: Checkout repository in the CWD
       - name: Checkout repository
