@@ -3,6 +3,7 @@ name: React Tests with Jest and testing-library
 
 # execute on events
 on:
+  # push for all branches. May remove later.
   push:
   pull_request:
     branches:
