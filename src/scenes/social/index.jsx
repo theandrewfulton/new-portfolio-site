@@ -30,7 +30,7 @@ const StyledIcon = styled.article `
 
 export const Social = () => {
     return (
-        <StyledSocial>
+        <StyledSocial data-testid="social-element">
             <StyledIcon>
                 <a href="https://github.com/theandrewfulton" target="_blank" rel="noopener noreferrer">
                     <ConfigIcon>
