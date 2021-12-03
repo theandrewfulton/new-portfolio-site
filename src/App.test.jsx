@@ -6,3 +6,9 @@ test('renders header text inside App', () => {
   const headerText = screen.getByText('Andrew Fulton');
   expect(headerText).toBeInTheDocument();
 });
+
+// render Home
+// render About
+// render Projects
+// Articles points to medium?
+// render contact
