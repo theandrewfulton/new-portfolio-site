@@ -10,7 +10,7 @@ body {
   /* min-height: 100%; */
   box-sizing: border-box;
   /* overflow-y: hidden; */
-  background: linear-gradient(180deg, #200833 0%, #110026 100%);
+  background: linear-gradient(180deg, #200883 0%, #110026 100%);
   margin: 0;
   font-family: 'Raleway', sans-serif
 }
@@ -18,6 +18,12 @@ body {
 /* override paragraph margin */
 p {
   margin: 10px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+  margin: 10px 10px 15px 10px;
 }
 
 a, button {

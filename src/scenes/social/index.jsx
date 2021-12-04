@@ -14,7 +14,7 @@ const StyledSocial = styled.section `
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    width: 80vw;
+    width: 60vw;
 `
 const StyledIcon = styled.article `
     background: radial-gradient(100% 100% at 0% 0%, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.15) 100%);
