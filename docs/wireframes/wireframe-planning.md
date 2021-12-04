@@ -94,6 +94,8 @@ scroll up and border around navbar disappears?
 
 close mobile navbar after clicking link - handle click?
 
+BUG - close menu button returns to homepage instead of staying on current page
+
 #### About
 
 Show all 3 showcase sections side-by-side or one vertically, never 2.
