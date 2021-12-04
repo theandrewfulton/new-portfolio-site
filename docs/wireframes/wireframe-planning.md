@@ -78,6 +78,8 @@ create component for handling background-blur workaround?
 
 create component for desktop vs mobile logic?
 
+Error when page doesn't exist + tests
+
 #### Navbar
 
 bump navbar to top with some kind of animation when scrolling down?
@@ -90,7 +92,7 @@ Mobile navbar has my name as a wordmark and condenses to AF in the corner on scr
 
 scroll up and border around navbar disappears?
 
-close mobile navbar after clicking link?
+close mobile navbar after clicking link - handle click?
 
 #### About
 
