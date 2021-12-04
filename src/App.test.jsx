@@ -51,13 +51,15 @@ test('Navigate to Projects component', () => {
   navTest('Projects','This is the Projects component')
 })
 
-// Articles points to medium?
-test('Navigate to articles on Medium', () => {
+// test Articles Link points to Medium in a new tab
+test('Navigate to articles on Medium in a new tab', () => {
   render(
       <App />
   )
   const articlesLink = screen.getByText('Articles')
   expect(articlesLink).toHaveAttribute('href', 'https://theandrewfulton.medium.com')
+  expect(articlesLink).toHaveAttribute('rel', 'noopener noreferrer')
+  expect(articlesLink).toHaveAttribute('target', '_blank')
 })
 
 // render contact
