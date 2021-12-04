@@ -94,6 +94,8 @@ scroll up and border around navbar disappears?
 
 close mobile navbar after clicking link - handle click?
 
+adjust transparency down for mobile navbar - poor contrast on Contact page
+
 BUG - close menu button returns to homepage instead of staying on current page
 
 #### About
