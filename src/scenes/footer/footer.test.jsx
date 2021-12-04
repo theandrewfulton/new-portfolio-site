@@ -6,3 +6,5 @@ test('renders text inside Footer component', () => {
   const footerText = screen.getByText('Copyright © 2021 Andrew Fulton');
   expect(footerText).toBeInTheDocument();
 });
+
+// todo test footer is current year?

@@ -1,6 +1,8 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
-import App from './App';
+import App from './App'
+import {createMemoryHistory} from 'history'
+import {Router} from 'react-router-dom'
 
 test('renders header text inside App', () => {
   render(<App />)
@@ -8,29 +10,57 @@ test('renders header text inside App', () => {
   expect(headerText).toBeInTheDocument()
 })
 
-// render Home
-// test('home component renders when navlink is clicked', () => {
-//  render(<App />)
-//  const homeLink = screen.getByText('Home')
-//     // click mobile header button
-//     userEvent.click(homeLink)
-//   const homeComponent = screen.getByTestId('home-component')
-//   // expect(homeComponent).toBeInTheDocument()
-//  screen.debug()
-// })
+// Function for testing Navigation items
+const navTest = (navItem, component) => {
+  const history = createMemoryHistory()
+  render(
+    <Router history={history}>
+      <App />
+    </Router>,
+  )
+  // Find and click nav item link
+  userEvent.click(screen.getByText(navItem))
+  // expect component to be in the document
+  expect(screen.getByText(component)).toBeInTheDocument()
+}
 
+// render Home
+test('Navigate to Home, About and back to Home', () => {
+  const history = createMemoryHistory()
+  render(
+    <Router history={history}>
+      <App />
+    </Router>,
+  )
+  // Find and click About link
+  userEvent.click(screen.getByText('About'))
+  // expect component to be in the document
+  expect(screen.getByText('This is the About component')).toBeInTheDocument()
+  // find and click on Home link
+  userEvent.click(screen.getByText('Home'))
+  expect(screen.getByText('This is the Home component')).toBeInTheDocument()
+})
 
 // render About
+test('Navigate to About component', () => {
+  navTest('About','This is the About component')
+})
 
-// test('About component renders when navlink is clicked', () => {
-//   render(<App />)
-//   const aboutLink = screen.getByText('About')
-//      // click mobile header button
-//      userEvent.click(aboutLink)
-//    const aboutComponent = screen.getByTestId('about-component')
-//    expect(homeComponent).toBeInTheDocument()
-//   // screen.debug()
-//  })
 // render Projects
+test('Navigate to Projects component', () => {
+  navTest('Projects','This is the Projects component')
+})
+
 // Articles points to medium?
+test('Navigate to articles on Medium', () => {
+  render(
+      <App />
+  )
+  const articlesLink = screen.getByText('Articles')
+  expect(articlesLink).toHaveAttribute('href', 'https://theandrewfulton.medium.com')
+})
+
 // render contact
+test('Navigate to Contact component', () => {
+  navTest('Contact','This is the Contact component')
+})
