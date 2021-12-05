@@ -80,6 +80,8 @@ create component for desktop vs mobile logic?
 
 Error when page doesn't exist + tests
 
+Edit index.html in public to remove template comments
+
 #### Navbar
 
 bump navbar to top with some kind of animation when scrolling down?
@@ -115,6 +117,10 @@ Allow 2 cards in a column on projects page but not on about page?
 #### Social Media
 
 social media button section on every page
+
+#### Contact
+
+Bad overlap at 300px width
 
 
 
