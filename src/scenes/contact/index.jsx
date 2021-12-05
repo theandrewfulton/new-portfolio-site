@@ -24,6 +24,11 @@ const StyledIcon = styled.article `
 `
 
 
+// todo form validation
+// todo form styling
+// todo success/error styling?
+// todo testing
+
 const ContactForm = () => {
     // set state for Loading notice
     const [loading,setLoading] = useState(false)
@@ -39,12 +44,14 @@ const ContactForm = () => {
     // useRef for emailJS
     const form = useRef();
 
+    // message to display when form submitted
     const successMessage = () => {
         return (
-            <p>🐦<em>*pigeon noises*</em> Hooray! Your message was sent and I'll get back to you soon.</p>
+            <p>🐦 <em>*pigeon noises*</em> Hooray! Your message was sent and I'll get back to you soon.</p>
         )
     }
 
+    // message to display when there is an error
     const errorMessage = () => {
         return (
             <p>Urp, it looks like my form is broken. Please contact me at <a href="mailto:hello@theandrewfulton.com">hello@theandrewfulton.com</a></p>
@@ -62,8 +69,7 @@ const ContactForm = () => {
         // send form to emailJS
         emailjs.sendForm('service_bx8cte4', 'contact_form', form.current, 'user_GMUXb7E2zjpQqVnWACFKQ')
         // if successful
-        .then((result) => {
-            console.log(result.text)
+        .then(() => {
             // stop loading
             setLoading(false)
             // show success message
@@ -76,60 +82,101 @@ const ContactForm = () => {
             setMessage('')
             // if not successful
         }, (error) => {
-            // console.log(error.text)
             setLoading(false)
             setformResponse(errorMessage)
         })
-        // clear form fields
-        //display confirmation message
     }
-    return (
-        // loading notification
-        
-        <>
-        <div>
-        {formResponse}
-        {loading && <p>Sending...</p>}
-        </div>
-        <form ref={form} onSubmit={handleSubmit}>
-        {/* Copied from Wireframe, I don't like it */}
-        <p>Contact Form</p>
-    {/* First Name */}
-    <label>
-        First Name:
-        {/* <input value={firstName} onChange={setFirstName} name="first_name"></input> */}
-        <input value={firstName} onChange={(event) => setFirstName(event.target.value)} name="first_name"></input>
-    </label><br/>
-    
-    {/* Last Name */}
-    <label>
-        Last Name:
-        {/* <input value={lastName} onChange={setLastName} name="last_name"></input> */}
-        <input value={lastName} onChange={(event) => setLastName(event.target.value)} name="last_name"></input>
-    </label><br/>
 
-    {/* email address */}
-    <label>
-        email:
-        {/* <input type="email" value={email} onChange={setEmail} name="reply_to"></input> */}
-        <input type="email" value={email} onChange={(event) => setEmail(event.target.value)} name="reply_to"></input>
-    </label><br/>
-    {/* subject? */}
-    <label>
-        Subject:
-        {/* <input value={subject} onChange={setSubject} name="subject"></input> */}
-        <input value={subject} onChange={(event) => setSubject(event.target.value)} name="subject"></input>
-    </label><br/>
-    {/* message */}
-    <label>
-        Message:
-        {/* <textarea value={message} onChange={setMessage} name="message"/> */}
-        <textarea value={message} onChange={(event) => setMessage(event.target.value)} name="message"/>
-    </label><br/>
-    {/* captcha? */}
-    {/* submit */}
-    <input type="submit" value="Submit" />
-    </form>
+    return (
+        <>
+            {/* Form and loading notifications */}
+            {formResponse}
+            {loading && <p>Sending...</p>}
+            {/* contact form */}
+            <form ref={form} onSubmit={handleSubmit}>
+                
+                {/* Copied from Wireframe, I don't like it */}
+                <p>Contact Form</p>
+                
+                {/* First Name */}
+                <label>
+                    First Name:
+                    <input
+                        value={firstName}
+                        onChange={
+                            (event) => setFirstName(event.target.value)
+                        }
+                        name="first_name"
+                        required="true"
+                        maxlength="50"
+                    />
+                </label><br/>
+                
+                {/* Last Name */}
+                <label>
+                    Last Name:
+                    <input
+                        value={lastName}
+                        onChange={
+                            (event) => setLastName(event.target.value)
+                        }
+                        name="last_name"
+                        required="true"
+                        maxlength="50"
+                    />
+                </label><br/>
+
+                {/* email address */}
+                <label>
+                    email:
+                        <input
+                        type="email"
+                        value={email}
+                        onChange={
+                            (event) => setEmail(event.target.value)
+                        }
+                        name="reply_to"
+                        required="true"
+                        maxlength="75"
+                    />
+                </label><br/>
+
+                {/* subject */}
+                <label>
+                    Subject:
+                        <input
+                        value={subject}
+                        onChange={
+                            (event) => setSubject(event.target.value)
+                        }
+                        name="subject"
+                        required="true"
+                        maxlength = "100"
+                    />
+                </label><br/>
+                
+                {/* message */}
+                <label>
+                    Message:
+                    <textarea
+                        value={message}
+                        onChange={
+                            (event) => setMessage(event.target.value)
+                        }
+                        name="message"
+                        required="true"
+                        maxLength = "5000"
+                    />
+                </label><br/>
+
+                {/* captcha? */}
+
+                {/* submit */}
+                <input
+                    type="submit"
+                    value="Submit"
+                />
+            </form>
     </>
     )
 }

@@ -120,7 +120,7 @@ social media button section on every page
 
 #### Contact
 
-Bad overlap at 300px width
+Bad overlap at 300px width - including error and success messages
 
 
 
