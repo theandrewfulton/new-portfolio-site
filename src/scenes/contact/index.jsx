@@ -24,77 +24,113 @@ const StyledIcon = styled.article `
 `
 
 
-
-// custom useInput hook for DRYer code
-function useInput(initialValue){
-    const [value,setValue] = useState(initialValue)
-     function handleChange(event){
-         setValue(event.target.value)
-        }
-        return [value,handleChange]
- }
-
 const ContactForm = () => {
+    // set state for Loading notice
+    const [loading,setLoading] = useState(false)
+    // set state for messages about form submission (error,)
+    const [formResponse, setformResponse] = useState('')
     // set state for form inputs
-    const [firstName,setFirstName] = useInput('')
-    const [lastName,setLastName] = useInput('')
-    const [email,setEmail] = useInput('')
-    const [subject,setSubject] = useInput('')
-    const [message,setMessage] = useInput('')
+    const [firstName,setFirstName] = useState('')
+    const [lastName,setLastName] = useState('')
+    const [email,setEmail] = useState('')
+    const [subject,setSubject] = useState('')
+    const [message,setMessage] = useState('')
 
     // useRef for emailJS
     const form = useRef();
+
+    const successMessage = () => {
+        return (
+            <p>🐦<em>*pigeon noises*</em> Hooray! Your message was sent and I'll get back to you soon.</p>
+        )
+    }
+
+    const errorMessage = () => {
+        return (
+            <p>Urp, it looks like my form is broken. Please contact me at <a href="mailto:hello@theandrewfulton.com">hello@theandrewfulton.com</a></p>
+        )
+    }
     
     // behaviour on submit
     const handleSubmit = (event) => {
         // don't reload page on submit
       event.preventDefault()
-   
-        console.log(firstName, lastName, email, subject, message)
+        //reset any success or error messages
+        setformResponse("")
+        // show loading
+        setLoading(true)
+        // send form to emailJS
         emailjs.sendForm('service_bx8cte4', 'contact_form', form.current, 'user_GMUXb7E2zjpQqVnWACFKQ')
+        // if successful
         .then((result) => {
             console.log(result.text)
+            // stop loading
+            setLoading(false)
+            // show success message
+            setformResponse(successMessage())
+            // reset form values 
+            setFirstName('')
+            setLastName('')
+            setEmail('')
+            setSubject('')
+            setMessage('')
+            // if not successful
         }, (error) => {
-            console.log(error.text)
+            // console.log(error.text)
+            setLoading(false)
+            setformResponse(errorMessage)
         })
         // clear form fields
         //display confirmation message
     }
     return (
+        // loading notification
+        
+        <>
+        <div>
+        {formResponse}
+        {loading && <p>Sending...</p>}
+        </div>
         <form ref={form} onSubmit={handleSubmit}>
         {/* Copied from Wireframe, I don't like it */}
         <p>Contact Form</p>
     {/* First Name */}
     <label>
         First Name:
-        <input value={firstName} onChange={setFirstName} name="first_name"></input>
+        {/* <input value={firstName} onChange={setFirstName} name="first_name"></input> */}
+        <input value={firstName} onChange={(event) => setFirstName(event.target.value)} name="first_name"></input>
     </label><br/>
     
     {/* Last Name */}
     <label>
         Last Name:
-        <input value={lastName} onChange={setLastName} name="last_name"></input>
+        {/* <input value={lastName} onChange={setLastName} name="last_name"></input> */}
+        <input value={lastName} onChange={(event) => setLastName(event.target.value)} name="last_name"></input>
     </label><br/>
 
     {/* email address */}
     <label>
         email:
-        <input type="email" value={email} onChange={setEmail} name="reply_to"></input>
+        {/* <input type="email" value={email} onChange={setEmail} name="reply_to"></input> */}
+        <input type="email" value={email} onChange={(event) => setEmail(event.target.value)} name="reply_to"></input>
     </label><br/>
     {/* subject? */}
     <label>
         Subject:
-        <input value={subject} onChange={setSubject} name="subject"></input>
+        {/* <input value={subject} onChange={setSubject} name="subject"></input> */}
+        <input value={subject} onChange={(event) => setSubject(event.target.value)} name="subject"></input>
     </label><br/>
     {/* message */}
     <label>
         Message:
-        <textarea value={message} onChange={setMessage} name="message"/>
+        {/* <textarea value={message} onChange={setMessage} name="message"/> */}
+        <textarea value={message} onChange={(event) => setMessage(event.target.value)} name="message"/>
     </label><br/>
     {/* captcha? */}
     {/* submit */}
     <input type="submit" value="Submit" />
     </form>
+    </>
     )
 }
 
