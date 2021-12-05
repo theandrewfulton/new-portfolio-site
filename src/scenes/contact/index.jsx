@@ -1,5 +1,6 @@
-import {useState} from 'react'
+import {useState, useRef} from 'react'
 import styled from "styled-components"
+import emailjs from 'emailjs-com'
 
 const TransparencySection = styled.section`
 background: radial-gradient(100% 241.89% at 100% 0%, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 100%);
@@ -22,6 +23,8 @@ const StyledIcon = styled.article `
     padding: 20px;
 `
 
+
+
 // custom useInput hook for DRYer code
 function useInput(initialValue){
     const [value,setValue] = useState(initialValue)
@@ -31,51 +34,62 @@ function useInput(initialValue){
         return [value,handleChange]
  }
 
-function ContactForm() {
+const ContactForm = () => {
     // set state for form inputs
     const [firstName,setFirstName] = useInput('')
     const [lastName,setLastName] = useInput('')
     const [email,setEmail] = useInput('')
     const [subject,setSubject] = useInput('')
     const [message,setMessage] = useInput('')
+
+    // useRef for emailJS
+    const form = useRef();
     
     // behaviour on submit
-    function handleSubmit(event){
+    const handleSubmit = (event) => {
         // don't reload page on submit
       event.preventDefault()
-    //   todo - display confirmation message
+   
         console.log(firstName, lastName, email, subject, message)
+        emailjs.sendForm('service_bx8cte4', 'contact_form', form.current, 'user_GMUXb7E2zjpQqVnWACFKQ')
+        .then((result) => {
+            console.log(result.text)
+        }, (error) => {
+            console.log(error.text)
+        })
+        // clear form fields
+        //display confirmation message
     }
     return (
-        <form onSubmit={handleSubmit}>
+        <form ref={form} onSubmit={handleSubmit}>
         {/* Copied from Wireframe, I don't like it */}
         <p>Contact Form</p>
     {/* First Name */}
     <label>
         First Name:
-        <input value={firstName} onChange={setFirstName}></input>
+        <input value={firstName} onChange={setFirstName} name="first_name"></input>
     </label><br/>
     
     {/* Last Name */}
     <label>
         Last Name:
-        <input value={lastName} onChange={setLastName}></input>
+        <input value={lastName} onChange={setLastName} name="last_name"></input>
     </label><br/>
 
     {/* email address */}
     <label>
         email:
-        <input type="email" value={email} onChange={setEmail}></input>
+        <input type="email" value={email} onChange={setEmail} name="reply_to"></input>
     </label><br/>
     {/* subject? */}
     <label>
         Subject:
-        <input value={subject} onChange={setSubject}></input>
+        <input value={subject} onChange={setSubject} name="subject"></input>
     </label><br/>
     {/* message */}
     <label>
         Message:
-        <textarea value={message} onChange={setMessage}/>
+        <textarea value={message} onChange={setMessage} name="message"/>
     </label><br/>
     {/* captcha? */}
     {/* submit */}
