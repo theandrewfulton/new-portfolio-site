@@ -107,8 +107,8 @@ const ContactForm = () => {
                             (event) => setFirstName(event.target.value)
                         }
                         name="first_name"
-                        required="true"
-                        maxlength="50"
+                        required={true}
+                        maxLength="50"
                     />
                 </label><br/>
                 
@@ -121,8 +121,8 @@ const ContactForm = () => {
                             (event) => setLastName(event.target.value)
                         }
                         name="last_name"
-                        required="true"
-                        maxlength="50"
+                        required={true}
+                        maxLength="50"
                     />
                 </label><br/>
 
@@ -136,8 +136,8 @@ const ContactForm = () => {
                             (event) => setEmail(event.target.value)
                         }
                         name="reply_to"
-                        required="true"
-                        maxlength="75"
+                        required={true}
+                        maxLength="75"
                     />
                 </label><br/>
 
@@ -150,8 +150,8 @@ const ContactForm = () => {
                             (event) => setSubject(event.target.value)
                         }
                         name="subject"
-                        required="true"
-                        maxlength = "100"
+                        required={true}
+                        maxLength = "100"
                     />
                 </label><br/>
                 
@@ -164,7 +164,7 @@ const ContactForm = () => {
                             (event) => setMessage(event.target.value)
                         }
                         name="message"
-                        required="true"
+                        required={true}
                         maxLength = "5000"
                     />
                 </label><br/>
