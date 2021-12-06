@@ -85,7 +85,7 @@ const ContactForm = () => {
     // message to display when there is an error
     const errorMessage = () => {
         return (
-            <p>Urp, it looks like my form is broken. Please contact me at <a href="mailto:hello@theandrewfulton.com">hello@theandrewfulton.com</a></p>
+            <p>Urp, it looks like your internet dropped out or my form is broken. Please contact me at <a href="mailto:hello@theandrewfulton.com">hello@theandrewfulton.com</a></p>
         )
     }
     
@@ -120,10 +120,10 @@ const ContactForm = () => {
 
     return (
         <>
-        <FormStyling>
             {/* Form and loading notifications */}
             {formResponse}
             {loading && <p>Sending...</p>}
+            <FormStyling>
             {/* contact form */}
             <form ref={form} onSubmit={handleSubmit}>
                 
