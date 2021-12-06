@@ -11,7 +11,8 @@ backdrop-filter: blur(10px);
 border-radius: 15px;
 margin: 30px 5%;
 // width: 90vw;
-padding: 5px 50px 50px 50px;
+// padding: 5px 50px 50px 50px;
+padding: 5px 5% 50px 5%
 `
 
 const StyledIcon = styled.article `
@@ -20,7 +21,37 @@ const StyledIcon = styled.article `
     backdrop-filter: blur(40px);
     border-radius: 15px;
     margin: auto;
-    padding: 20px;
+    padding: 4%;
+`
+
+const FormStyling = styled.article`
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+label {
+    width: 100%;
+    text-align: center;
+}
+
+input {
+    // margin: auto
+    margin: 10px 0 10px 0;
+}
+textarea {
+    margin 10px 0 10px 0;
+    width: 80%;
+    height: 150px;
+}
 `
 
 
@@ -89,6 +120,7 @@ const ContactForm = () => {
 
     return (
         <>
+        <FormStyling>
             {/* Form and loading notifications */}
             {formResponse}
             {loading && <p>Sending...</p>}
@@ -101,6 +133,7 @@ const ContactForm = () => {
                 {/* First Name */}
                 <label>
                     First Name:
+                    <br/>
                     <input
                         value={firstName}
                         onChange={
@@ -115,6 +148,7 @@ const ContactForm = () => {
                 {/* Last Name */}
                 <label>
                     Last Name:
+                    <br/>
                     <input
                         value={lastName}
                         onChange={
@@ -129,6 +163,7 @@ const ContactForm = () => {
                 {/* email address */}
                 <label>
                     email:
+                    <br/>
                         <input
                         type="email"
                         value={email}
@@ -144,6 +179,7 @@ const ContactForm = () => {
                 {/* subject */}
                 <label>
                     Subject:
+                    <br/>
                         <input
                         value={subject}
                         onChange={
@@ -158,6 +194,7 @@ const ContactForm = () => {
                 {/* message */}
                 <label>
                     Message:
+                    <br/>
                     <textarea
                         value={message}
                         onChange={
@@ -177,7 +214,8 @@ const ContactForm = () => {
                     value="Submit"
                 />
             </form>
-    </>
+        </FormStyling>
+        </>
     )
 }
 
