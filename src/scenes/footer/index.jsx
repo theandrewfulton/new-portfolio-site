@@ -8,12 +8,8 @@ border-style: solid none;
 backdrop-filter: blur(10px);
 text-align: center;
 font-size: 10px;
-/* width: 100vw; */
+margin-top: 30px;
 height: 20px;
-position:absolute;
-left:0;
-bottom:0;
-right:0;
 p {
     margin: 3px;
 }

@@ -15,6 +15,7 @@ justify-content: space-between;
 position: -webkit-sticky; /* Safari */
 position: sticky;
 top: 0;
+z-index:1000;
 p {
     margin-left: 10%;
     font-family: 'Caveat', cursive;
