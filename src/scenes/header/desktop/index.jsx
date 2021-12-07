@@ -13,6 +13,7 @@ margin-top: 30px;
 display: flex;
 justify-content: space-between;
 position: -webkit-sticky; /* Safari */
+// need to detect transparancy support for position:sticky to be effective
 position: sticky;
 top: 0;
 z-index:1000;
