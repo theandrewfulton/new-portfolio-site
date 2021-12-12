@@ -222,13 +222,14 @@ const ContactForm = () => {
     )
 }
 
-export const Contact = () => {
+export const Contact = ({description}) => {
     
     return (
         <TransparencySection>
             <h1>Contact Me</h1>
             <StyledIcon>
-                <p>This is the Contact component</p>
+                {/* <p>{ContactObject.description}</p> */}
+                <p>{description}</p>
                 <ContactForm/>               
             </StyledIcon>
         </TransparencySection>
