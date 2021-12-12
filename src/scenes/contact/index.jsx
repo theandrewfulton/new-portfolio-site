@@ -98,7 +98,7 @@ const ContactForm = () => {
         // show loading
         setLoading(true)
         // send form to emailJS
-        emailjs.sendForm('service_bx8cte4', 'contact_form', form.current, 'user_GMUXb7E2zjpQqVnWACFKQ')
+        emailjs.sendForm('service_bx8cte4', 'portfolio_contact_form', form.current, 'user_GMUXb7E2zjpQqVnWACFKQ')
         // if successful
         .then(() => {
             // stop loading
