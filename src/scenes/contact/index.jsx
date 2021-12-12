@@ -2,6 +2,9 @@ import {useState, useRef} from 'react'
 import styled from "styled-components"
 import emailjs from 'emailjs-com'
 
+// import page contents
+import {ContactObject} from "./contactCopy"
+
 const TransparencySection = styled.section`
 background: radial-gradient(100% 241.89% at 100% 0%, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 100%);
 border: 0.5px solid rgba(255, 255, 255, 0.5);
@@ -26,7 +29,10 @@ const StyledIcon = styled.article `
 
 const FormStyling = styled.article`
 
-
+p {
+    text-align: center;
+    margin-bottom: 50px;
+}
 
 form {
     width: 100%;
@@ -53,7 +59,7 @@ textarea {
     height: 150px;
 }
 .status {
-    text-align: center;
+    // text-align: center;
 }
 `
 
@@ -63,7 +69,7 @@ textarea {
 // todo success/error styling?
 // todo testing
 
-const ContactForm = () => {
+const ContactForm = ({description}) => {
     // set state for Loading notice
     const [loading,setLoading] = useState(false)
     // set state for messages about form submission (error,)
@@ -122,17 +128,14 @@ const ContactForm = () => {
     }
 
     return (
-        <>
-            <FormStyling>
+        <FormStyling>
+            <p>{description}</p>
             {/* Form and loading notifications */}
             {formResponse}
             {loading && <p className="status">Sending...</p>}
             {/* contact form */}
             <form ref={form} onSubmit={handleSubmit}>
-                
-                {/* Copied from Wireframe, I don't like it */}
-                <p>Contact Form</p>
-                
+                               
                 {/* First Name */}
                 <label>
                     First Name:
@@ -218,18 +221,16 @@ const ContactForm = () => {
                 />
             </form>
         </FormStyling>
-        </>
     )
 }
 
-export const Contact = ({description}) => {
+export const Contact = () => {
     
     return (
         <TransparencySection>
             <h1>Contact Me</h1>
             <StyledIcon>
-                <p>{description}</p>
-                <ContactForm/>               
+                <ContactForm {...ContactObject}/>               
             </StyledIcon>
         </TransparencySection>
     )

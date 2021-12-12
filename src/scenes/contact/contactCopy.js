@@ -1,3 +1,4 @@
 export const ContactObject = {
-    description: `This is the Contact component`
+    description: `Want to chat? \n
+    Please contact me using the form below or message me on Social Media.`
 }

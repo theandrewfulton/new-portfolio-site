@@ -23,9 +23,6 @@ import { About } from "./scenes/about"
 import { Projects } from "./scenes/projects"
 import { Contact } from "./scenes/contact"
 
-// import page contents
-import {ContactObject} from "./scenes/contact/contactCopy"
-
 const App = () => {
   return (
     <>
@@ -42,7 +39,7 @@ const App = () => {
               <Projects />
             </Route>
             <Route path="/contact">
-              <Contact {...ContactObject}/>
+              <Contact />
             </Route>
             <Route path="/">
               <Home />
