@@ -26,16 +26,16 @@ const StyledIcon = styled.article `
 
 const FormStyling = styled.article`
 
-display: flex;
-justify-content: center;
-align-items: center;
+
 
 form {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 label {
@@ -51,6 +51,9 @@ textarea {
     margin 10px 0 10px 0;
     width: 80%;
     height: 150px;
+}
+.status {
+    text-align: center;
 }
 `
 
@@ -78,14 +81,14 @@ const ContactForm = () => {
     // message to display when form submitted
     const successMessage = () => {
         return (
-            <p>🐦 <em>*pigeon noises*</em> Hooray! Your message was sent and I'll get back to you soon.</p>
+            <p className="status">🐦 <em>*pigeon noises*</em> Hooray! Your message was sent and I'll get back to you soon.</p>
         )
     }
 
     // message to display when there is an error
     const errorMessage = () => {
         return (
-            <p>Urp, it looks like your internet dropped out or my form is broken. Please contact me at <a href="mailto:hello@theandrewfulton.com">hello@andrew-fulton.com</a></p>
+            <p className="status">Urp, it looks like your internet dropped out or my form is broken. Please contact me at <a href="mailto:hello@theandrewfulton.com">hello@andrew-fulton.com</a></p>
         )
     }
     
@@ -120,10 +123,10 @@ const ContactForm = () => {
 
     return (
         <>
+            <FormStyling>
             {/* Form and loading notifications */}
             {formResponse}
-            {loading && <p>Sending...</p>}
-            <FormStyling>
+            {!loading && <p className="status">Sending...</p>}
             {/* contact form */}
             <form ref={form} onSubmit={handleSubmit}>
                 
