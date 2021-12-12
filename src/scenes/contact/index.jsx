@@ -49,22 +49,40 @@ label {
     text-align: center;
 }
 
-input {
-    // margin: auto
+// very similar to styled-icon. Need to investigate for DRY
+input, textarea {
     margin: 10px 0 10px 0;
+
+    color: white;
+    background: radial-gradient(100% 100% at 0% 0%, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.15) 100%);
+    border: 0.5px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(40px);
+    border-radius: 15px;
+    padding: 5px;
+
+    :focus {
+        background: radial-gradient(100% 100% at 49.55% 100%, rgba(255, 0, 0, 0.4) 0%, rgba(255, 0, 0, 0.2) 100%);
+    }
 }
+
 textarea {
-    margin 10px 0 10px 0;
     width: 80%;
     height: 150px;
 }
+
+// very similar to styled-icon. Need to investigate for DRY
+input[type=submit] {
+    color: white;
+    background: radial-gradient(100% 100% at 0% 0%, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.15) 100%);
+    border: 0.5px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(40px);
+    border-radius: 15px;
+    /* margin: 10px; */
+    padding: 5px;
+    :hover {
+        background: radial-gradient(100% 100% at 49.55% 100%, rgba(255, 0, 0, 0.4) 0%, rgba(255, 0, 0, 0.2) 100%);
+    }
 `
-
-
-// todo form validation
-// todo form styling
-// todo success/error styling?
-// todo testing
 
 const ContactForm = ({description}) => {
     // set state for Loading notice
@@ -212,6 +230,7 @@ const ContactForm = ({description}) => {
                 {/* captcha? */}
 
                 {/* submit */}
+                
                 <input
                     type="submit"
                     value="Submit"

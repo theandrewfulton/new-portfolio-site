@@ -10,12 +10,12 @@ body {
   /* mobile mockup is #200833. Need to decide which looks better */
   margin: 0;
   font-family: 'Raleway', sans-serif;
-  white-space: pre-line;
 }
 
 /* override paragraph margin */
 p {
   margin: 10px;
+  white-space: pre-line;
 }
 
 h1 {
