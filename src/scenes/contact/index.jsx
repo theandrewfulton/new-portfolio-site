@@ -140,7 +140,7 @@ const ContactForm = ({description}) => {
 
     return (
         <FormStyling>
-            <p>{description}</p>
+            <p data-testid="contact-copy">{description}</p>
             <Social />
             {/* Form and loading notifications */}
             {formResponse}

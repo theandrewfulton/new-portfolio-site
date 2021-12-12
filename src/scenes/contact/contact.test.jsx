@@ -5,8 +5,8 @@ import { Contact } from '.'
 import { ContactObject } from './contactCopy'
 
 test('Render the Contact component', () => {
-    render(<Contact {...ContactObject}/>)
-    const contactText = screen.getByText(ContactObject.description)
+    render(<Contact/>)
+    const contactText = screen.getByTestId('contact-copy')
     expect(contactText).toBeInTheDocument()
 })
 
