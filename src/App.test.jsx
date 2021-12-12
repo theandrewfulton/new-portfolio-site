@@ -64,5 +64,5 @@ test('Navigate to articles on Medium in a new tab', () => {
 
 // render contact
 test('Navigate to Contact component', () => {
-  navTest('Contact','This is the Contact component')
+  navTest('Contact', "Contact Me")
 })
