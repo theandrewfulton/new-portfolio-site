@@ -126,7 +126,7 @@ const ContactForm = () => {
             <FormStyling>
             {/* Form and loading notifications */}
             {formResponse}
-            {!loading && <p className="status">Sending...</p>}
+            {loading && <p className="status">Sending...</p>}
             {/* contact form */}
             <form ref={form} onSubmit={handleSubmit}>
                 
@@ -228,7 +228,6 @@ export const Contact = ({description}) => {
         <TransparencySection>
             <h1>Contact Me</h1>
             <StyledIcon>
-                {/* <p>{ContactObject.description}</p> */}
                 <p>{description}</p>
                 <ContactForm/>               
             </StyledIcon>
