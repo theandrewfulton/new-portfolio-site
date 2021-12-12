@@ -2,9 +2,10 @@ import { render, screen } from '@testing-library/react'
 // is this needed? seems to work without in all my other tests
 import "@testing-library/jest-dom"
 import { Contact } from '.'
+import { ContactObject } from './contactCopy'
 
 test('Render the Contact component', () => {
-    render(<Contact/>)
+    render(<Contact {...ContactObject}/>)
     const contactText = screen.getByText('This is the Contact component')
     expect(contactText).toBeInTheDocument()
 })
