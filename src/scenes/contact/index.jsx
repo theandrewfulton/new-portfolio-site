@@ -2,6 +2,8 @@ import {useState, useRef} from 'react'
 import styled from "styled-components"
 import emailjs from 'emailjs-com'
 
+import { Social } from '../social'
+
 // import page contents
 import {ContactObject} from "./contactCopy"
 
@@ -42,6 +44,7 @@ form {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 50px;
 }
 
 label {
@@ -72,13 +75,6 @@ textarea {
 
 // very similar to styled-icon. Need to investigate for DRY
 input[type=submit] {
-    color: white;
-    background: radial-gradient(100% 100% at 0% 0%, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.15) 100%);
-    border: 0.5px solid rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(40px);
-    border-radius: 15px;
-    /* margin: 10px; */
-    padding: 5px;
     :hover {
         background: radial-gradient(100% 100% at 49.55% 100%, rgba(255, 0, 0, 0.4) 0%, rgba(255, 0, 0, 0.2) 100%);
     }
@@ -145,6 +141,7 @@ const ContactForm = ({description}) => {
     return (
         <FormStyling>
             <p>{description}</p>
+            <Social />
             {/* Form and loading notifications */}
             {formResponse}
             {loading && <p>Sending...</p>}
