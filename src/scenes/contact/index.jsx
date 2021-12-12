@@ -58,9 +58,6 @@ textarea {
     width: 80%;
     height: 150px;
 }
-.status {
-    // text-align: center;
-}
 `
 
 
@@ -87,14 +84,14 @@ const ContactForm = ({description}) => {
     // message to display when form submitted
     const successMessage = () => {
         return (
-            <p className="status">🐦 <em>*pigeon noises*</em> Hooray! Your message was sent and I'll get back to you soon.</p>
+            <p>🐦 <em>*pigeon noises*</em> Hooray! Your message was sent and I'll get back to you soon.</p>
         )
     }
 
     // message to display when there is an error
     const errorMessage = () => {
         return (
-            <p className="status">Urp, it looks like your internet dropped out or my form is broken. Please contact me at <a href="mailto:hello@theandrewfulton.com">hello@andrew-fulton.com</a></p>
+            <p>Urp, it looks like your internet dropped out or my form is broken. Please contact me at <a href="mailto:hello@theandrewfulton.com">hello@andrew-fulton.com</a></p>
         )
     }
     
@@ -132,7 +129,7 @@ const ContactForm = ({description}) => {
             <p>{description}</p>
             {/* Form and loading notifications */}
             {formResponse}
-            {loading && <p className="status">Sending...</p>}
+            {loading && <p>Sending...</p>}
             {/* contact form */}
             <form ref={form} onSubmit={handleSubmit}>
                                
