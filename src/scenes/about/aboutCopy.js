@@ -1,7 +1,26 @@
 export const AboutObject = {
-    skillsSection: `Skills`,
+    skillsSection: `
+    - HTML \n
+    - CSS \n
+    - JavaScript \n
+    - React \n
+    - Ruby \n
+    - Rails \n
+    - PostgreSQL
+    `,
     
-    technologySection: `Platforms/Technologies`,
+    technologySection: `
+    - Linux \n
+    - VSCode \n
+    - GitHub \n
+    - Netlify \n
+    - Heroku \n
+    - Trello \n
+    `,
 
-    interestsSection: `Interests`
+    interestsSection: `
+    - Drone Photogrammetry \n
+    - GIS in Agriculture \n
+    - Linux/IOT Projects
+    `
 }

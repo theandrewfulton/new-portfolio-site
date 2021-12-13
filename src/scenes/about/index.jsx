@@ -17,6 +17,7 @@ const PageContentExtended = styled(PageContent)`
     // flex-grow isn't perfect. May need to investigate further of content still wonky
     flex-grow: 1;
     margin: 10px;
+    width: 200px;
 `
 
 const IconStyling = styled(PageContent) `
