@@ -180,7 +180,7 @@ const ContactForm = ({description}) => {
 
                 {/* email address */}
                 <label>
-                    email:
+                    Email:
                     <br/>
                         <input
                         type="email"

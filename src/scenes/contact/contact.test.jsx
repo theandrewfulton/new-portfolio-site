@@ -24,7 +24,7 @@ test('Render the Contact component', () => {
 
     test('Render the email field', () => {
         render(<Contact />)
-        const emailAddress = screen.getByRole('textbox', {name: "email:"})
+        const emailAddress = screen.getByRole('textbox', {name: "Email:"})
         expect(emailAddress).toBeInTheDocument()
     })
     test('Render the Subject field', () => {
