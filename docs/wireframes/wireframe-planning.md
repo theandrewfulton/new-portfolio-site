@@ -80,6 +80,8 @@ create component for desktop vs mobile logic?
 
 Error when page doesn't exist + tests
 
+Edit index.html in public to remove template comments
+
 #### Navbar
 
 bump navbar to top with some kind of animation when scrolling down?
@@ -93,6 +95,10 @@ Mobile navbar has my name as a wordmark and condenses to AF in the corner on scr
 scroll up and border around navbar disappears?
 
 close mobile navbar after clicking link - handle click?
+
+adjust transparency down for mobile navbar - poor contrast on Contact page
+
+BUG - close menu button returns to homepage instead of staying on current page
 
 #### About
 
@@ -111,6 +117,10 @@ Allow 2 cards in a column on projects page but not on about page?
 #### Social Media
 
 social media button section on every page
+
+#### Contact
+
+Bad overlap at 300px width - including error and success messages
 
 
 

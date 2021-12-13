@@ -19,6 +19,7 @@ const MobileHeaderStyle = styled.button`
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
+    z-index:1000;
     :hover {
         background: radial-gradient(100% 100% at 0% 0%, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.15) 100%);
     }
