@@ -1,4 +1,6 @@
 import styled from 'styled-components'
+import { GiSkills, GiLaddersPlatform, GiBookPile } from "react-icons/gi";
+import ConfigIcon from "./iconFormat"
 // import common styles
 import { PageTransparency, PageContent} from '../styles'
 
@@ -15,12 +17,21 @@ const PageContentExtended = styled(PageContent)`
     // flex-grow isn't perfect. May need to investigate further of content still wonky
     flex-grow: 1;
     margin: 10px;
-`;
+`
+
+const IconStyling = styled(PageContent) `
+    text-align: center;
+`
 
 // skills article
 const SkillsArticle = ({skillsSection}) => {
     return (
         <PageContentExtended>
+            <IconStyling>
+                <ConfigIcon>
+                    <GiSkills />
+                </ConfigIcon>
+            </IconStyling>
             <p>{skillsSection}</p>
         </PageContentExtended>
     )
@@ -30,6 +41,11 @@ const SkillsArticle = ({skillsSection}) => {
 const TechnologyArticle = ({technologySection}) => {
     return (
         <PageContentExtended>
+            <IconStyling>
+                <ConfigIcon>
+                    <GiLaddersPlatform />
+                </ConfigIcon>
+            </IconStyling>
             <p>{technologySection}</p>
         </PageContentExtended>
     )
@@ -40,6 +56,11 @@ const TechnologyArticle = ({technologySection}) => {
 const InterestsArticle = ({interestsSection}) => {
     return (
         <PageContentExtended>
+            <IconStyling>
+                <ConfigIcon>
+                    <GiBookPile />
+                </ConfigIcon>
+            </IconStyling>
             <p>{interestsSection}</p>
         </PageContentExtended>
     )

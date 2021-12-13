@@ -1,5 +1,5 @@
 export const AboutObject = {
-    skillsSection: `This is the About component`,
+    skillsSection: `Skills`,
     
     technologySection: `Platforms/Technologies`,
 
