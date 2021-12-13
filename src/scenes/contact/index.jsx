@@ -2,8 +2,11 @@ import {useState, useRef} from 'react'
 import styled from "styled-components"
 import emailjs from 'emailjs-com'
 
-import { Social } from '../social'
+// import styling
 import { PageTransparency, PageContent} from '../styles'
+
+// import Social component
+import { Social } from '../social'
 
 // import page contents
 import {ContactObject} from "./contactCopy"
