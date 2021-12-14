@@ -20,6 +20,7 @@ export const PageContent = styled.article `
     border-radius: 15px;
     margin: auto;
     padding: 4%;
+    text-align: left;
 `
 
 export const StyledButton = styled.button `
