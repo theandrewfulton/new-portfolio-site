@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { GiSkills, GiLaddersPlatform, GiBookPile } from "react-icons/gi";
 import ConfigIcon from "./iconFormat"
 // import common styles
-import { PageTransparency, PageContent} from '../styles'
+import { PageTransparency, PageContent, StyledButton} from '../styles'
 
 // import page contents
 import {AboutObject} from "./aboutCopy"
@@ -13,11 +13,15 @@ const AboutFlex = styled.section `
     flex-wrap: wrap;
 `
 
-const PageContentExtended = styled(PageContent)`
+const PageContentExtended = styled(PageContent) `
     // flex-grow isn't perfect. May need to investigate further of content still wonky
     flex-grow: 1;
     margin: 10px;
     width: 200px;
+`
+
+const PageTransparencyPadding = styled(PageTransparency) `
+    padding-bottom: 10px;
 `
 
 const IconStyling = styled(PageContent) `
@@ -70,13 +74,14 @@ const InterestsArticle = ({interestsSection}) => {
 export const About = () => {
     return (
         
-        <PageTransparency>
+        <PageTransparencyPadding>
             <h1>About Me</h1>
             <AboutFlex>
                 <SkillsArticle {...AboutObject} />
                 <TechnologyArticle {...AboutObject} />
                 <InterestsArticle {...AboutObject} />
             </AboutFlex>
-        </PageTransparency>
+            <a href={process.env.PUBLIC_URL + 'files/AndrewFulton.pdf'} target="_blank" rel="noopener noreferrer"><StyledButton>Download Resume</StyledButton></a>
+        </PageTransparencyPadding>
     )
 }

@@ -55,7 +55,7 @@ textarea {
     height: 150px;
 }
 
-// very similar to styled-icon. Need to investigate for DRY
+// very similar to styled-icon. Need to investigate for DRY. Also used for buttons elsewhere
 input[type=submit] {
     :hover {
         background: radial-gradient(100% 100% at 49.55% 100%, rgba(255, 0, 0, 0.4) 0%, rgba(255, 0, 0, 0.2) 100%);
