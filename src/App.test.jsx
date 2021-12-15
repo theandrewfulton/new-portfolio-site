@@ -35,7 +35,7 @@ test('Navigate to Home, About and back to Home', () => {
   // Find and click About link
   userEvent.click(screen.getByText('About'))
   // expect component to be in the document
-  expect(screen.getByText('This is the About component')).toBeInTheDocument()
+  expect(screen.getByRole('heading')).toHaveTextContent('About Me')
   // find and click on Home link
   userEvent.click(screen.getByText('Home'))
   expect(screen.getByText('This is the Home component')).toBeInTheDocument()
@@ -43,7 +43,7 @@ test('Navigate to Home, About and back to Home', () => {
 
 // render About
 test('Navigate to About component', () => {
-  navTest('About','This is the About component')
+  navTest('About','About Me')
 })
 
 // render Projects
@@ -64,5 +64,5 @@ test('Navigate to articles on Medium in a new tab', () => {
 
 // render contact
 test('Navigate to Contact component', () => {
-  navTest('Contact', "Contact Me")
+  navTest('Contact', 'Contact Me')
 })
