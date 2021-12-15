@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom'
 import { PageTransparency, PageContent, StyledButton} from '../styles'
 
 // import page contents
-// import {AboutObject} from "./aboutCopy"
+import {HomeObject} from "./homeCopy"
 
 const PageContentExtended = styled(PageContent) `
     margin-top: 50px;
@@ -24,10 +24,9 @@ const PageContentExtended = styled(PageContent) `
 `
 
 // greet user based on time
-const timeGreeting = () => {
+const TimeGreeting = () => {
     const currentTime = new Date()
     const timeConvert = currentTime.getHours()
-    console.log(timeConvert)
 
     if (timeConvert < "12" ) {
         return (
@@ -48,15 +47,24 @@ const timeGreeting = () => {
     }
 }
 
+// this component is silly
+const HomeIntroduction = ({homeLine2, homeLine3, homeLine4}) => {
+return (
+    <>
+        <h2>{homeLine2}</h2>
+        <h3>{homeLine3}</h3>
+        <p>{homeLine4}</p>
+    </>
+)
+}
+
 export const Home = () => {
     return (
         <PageTransparency>
             <PageContentExtended>
                 {/* <p>This is the Home component</p> */}
-                <h1>{timeGreeting()}</h1>
-                <h2>My name is Andrew Fulton</h2>
-                <h3>I'm a Full-Stack Developer based in Sydney, Australia</h3>
-                <p>I also have Consulting, Mentoring and Startup experience</p>
+                <h1><TimeGreeting /></h1>
+                <HomeIntroduction {...HomeObject} />
                 <a href={process.env.PUBLIC_URL + 'files/AndrewFulton.pdf'} target="_blank" rel="noopener noreferrer"><StyledButton>Download Resume</StyledButton></a>
                 <NavLink to="/contact"><StyledButton>Contact Me</StyledButton></NavLink>
             </PageContentExtended>
