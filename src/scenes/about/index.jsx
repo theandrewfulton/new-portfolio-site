@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { GiSkills, GiLaddersPlatform, GiBookPile } from "react-icons/gi";
-import ConfigIcon from "./iconFormat"
+
 // import common styles
 import { PageTransparency, PageContent, StyledButton} from '../styles'
 
@@ -36,9 +36,7 @@ const SkillsArticle = ({skillsSection}) => {
     return (
         <PageContentExtended>
             <IconStyling>
-                <ConfigIcon>
-                    <GiSkills />
-                </ConfigIcon>
+                <GiSkills size="5em"/>
             </IconStyling>
             <p>{skillsSection}</p>
         </PageContentExtended>
@@ -50,9 +48,7 @@ const TechnologyArticle = ({technologySection}) => {
     return (
         <PageContentExtended>
             <IconStyling>
-                <ConfigIcon>
-                    <GiLaddersPlatform />
-                </ConfigIcon>
+                <GiLaddersPlatform size="5em" />
             </IconStyling>
             <p>{technologySection}</p>
         </PageContentExtended>
@@ -65,9 +61,7 @@ const InterestsArticle = ({interestsSection}) => {
     return (
         <PageContentExtended>
             <IconStyling>
-                <ConfigIcon>
-                    <GiBookPile />
-                </ConfigIcon>
+                <GiBookPile size="5em"/>
             </IconStyling>
             <p>{interestsSection}</p>
         </PageContentExtended>
