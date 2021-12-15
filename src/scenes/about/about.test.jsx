@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import { About } from '.'
-import { AboutObject } from '../about/aboutCopy'
+// import { AboutObject } from '../about/aboutCopy'
 
 // this is identical to the nav tests
 test('Render the About component', () => {
