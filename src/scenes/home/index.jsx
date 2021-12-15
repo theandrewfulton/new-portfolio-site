@@ -11,8 +11,8 @@ const PageContentExtended = styled(PageContent) `
     margin-top: 50px;
     text-align: center;
 
-    h1, h2, p {
-        margin 50px;
+    h1, h2, h3, p {
+        margin: 50px 0 0 0;
     }
 
     h1 {
@@ -20,6 +20,9 @@ const PageContentExtended = styled(PageContent) `
     }
     h2 {
         font-size: 2em;
+    }
+    p {
+        margin-bottom: 50px;
     }
 `
 
