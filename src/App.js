@@ -12,6 +12,8 @@ import {
 // there's also an index.css, check there if you are having issues
 import './App.css';
 
+import { BackgroundParticles } from './backgroundParticles'
+
 // import scenes
 import { Header } from "./scenes/header"
 import { Social } from "./scenes/social"
@@ -26,6 +28,8 @@ import { Contact } from "./scenes/contact"
 const App = () => {
   return (
     <>
+      {/* import background particle effects */}
+      <BackgroundParticles />
         {/* React routes and paths */}
         <Router>
           {/* display the nav content, it needs to be inside the Router object to work correctly */}
