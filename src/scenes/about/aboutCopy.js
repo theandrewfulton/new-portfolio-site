@@ -1,26 +1,40 @@
 export const AboutObject = {
     skillsSection: `
-    - HTML \n
-    - CSS \n
-    - JavaScript \n
-    - React \n
-    - Ruby \n
-    - Rails \n
+    - HTML
+    
+    - CSS
+
+    - JavaScript
+
+    - React
+
+    - Ruby
+
+    - Rails
+
     - PostgreSQL
     `,
     
     technologySection: `
-    - Linux \n
-    - VSCode \n
-    - GitHub \n
-    - Netlify \n
-    - Heroku \n
-    - Trello \n
+    - Linux
+
+    - VSCode
+
+    - GitHub
+
+    - Netlify
+
+    - Heroku
+
+    - Trello
     `,
 
     interestsSection: `
-    - Drone Photogrammetry \n
-    - GIS in Agriculture \n
+    - Drone Photogrammetry
+
+    - GIS in Agriculture
+
     - Linux/IOT Projects
+
     `
 }
