@@ -35,7 +35,7 @@ test('Navigate to Home, About and back to Home', () => {
   // Find and click About link
   userEvent.click(screen.getByText('About'))
   // expect component to be in the document
-  expect(screen.getByText('About Me')).toBeInTheDocument()
+  expect(screen.getByRole('heading')).toHaveTextContent('About Me')
   // find and click on Home link
   userEvent.click(screen.getByText('Home'))
   expect(screen.getByText('This is the Home component')).toBeInTheDocument()

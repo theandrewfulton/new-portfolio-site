@@ -38,7 +38,7 @@ const SkillsArticle = ({skillsSection}) => {
             <IconStyling>
                 <GiSkills size="5em"/>
             </IconStyling>
-            <p>{skillsSection}</p>
+            <p data-testid="skills-copy">{skillsSection}</p>
         </PageContentExtended>
     )
 }
@@ -50,7 +50,7 @@ const TechnologyArticle = ({technologySection}) => {
             <IconStyling>
                 <GiLaddersPlatform size="5em" />
             </IconStyling>
-            <p>{technologySection}</p>
+            <p data-testid="technology-copy">{technologySection}</p>
         </PageContentExtended>
     )
 }
@@ -63,7 +63,7 @@ const InterestsArticle = ({interestsSection}) => {
             <IconStyling>
                 <GiBookPile size="5em"/>
             </IconStyling>
-            <p>{interestsSection}</p>
+            <p data-testid="interests-copy">{interestsSection}</p>
         </PageContentExtended>
     )
 }
