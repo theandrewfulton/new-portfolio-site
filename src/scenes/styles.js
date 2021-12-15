@@ -24,13 +24,14 @@ export const PageContent = styled.article `
 `
 
 export const StyledButton = styled.button `
-    margin: 10px 0 10px 0;
+    margin: 10px;
+    width: 150px;
     color: white;
     background: radial-gradient(100% 100% at 0% 0%, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.15) 100%);
     border: 0.5px solid rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(40px);
     border-radius: 15px;
-    padding: 5px;
+    padding: 10px;
     :hover {
         background: radial-gradient(100% 100% at 49.55% 100%, rgba(255, 0, 0, 0.4) 0%, rgba(255, 0, 0, 0.2) 100%);
     }
