@@ -28,6 +28,9 @@ const IconStyling = styled(PageContent) `
     text-align: center;
 `
 
+// Repetition of articles could be reduced with some javascript logic to apply
+// a certain style for each object. Although the current code is easier to understand
+
 // skills article
 const SkillsArticle = ({skillsSection}) => {
     return (
